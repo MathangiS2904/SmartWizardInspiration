@@ -1,0 +1,6229 @@
+[
+  {
+    "name": "multi zone",
+    "user_style_id": 308,
+    "thumbnail_url": "staging-styles/styles/multi_zone/thumbnails/Screenshot 2026-07-06 110917_20260714061407.png",
+    "description": "multi zone",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      146
+    ],
+    "optional_assets": [
+      196,
+      132,
+      144,
+      162,
+      114,
+      150,
+      141,
+      134,
+      10
+    ],
+    "texture_rules": {
+      "floor": "298",
+      "door_model": "398",
+      "window_model": "130",
+      "window_dressing_model": "436",
+      "inner_wall_hex": "#858585",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#FFFFFF"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {
+      "Primary": {
+        "door": "near"
+      },
+      "Dining": {
+        "door": "far"
+      }
+    },
+    "id": 175,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 60,
+        "id": 349,
+        "style_id": 175
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Multi ZOne 2",
+    "user_style_id": 307,
+    "thumbnail_url": "staging-styles/styles/Multi_ZOne_2/thumbnails/Screenshot 2026-07-14 100046_20260714054713.png",
+    "description": "Multi ZOne 2",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      124
+    ],
+    "optional_assets": [
+      417,
+      416,
+      156,
+      140,
+      39,
+      38,
+      121,
+      147,
+      148,
+      150,
+      134,
+      104,
+      103
+    ],
+    "texture_rules": {
+      "floor": "298",
+      "door_model": "393",
+      "window_model": "115",
+      "window_dressing_model": "421",
+      "inner_wall_hex": "#F2E8D5",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#FFFFFF"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {
+      "Primary": {
+        "door": "far"
+      },
+      "Study": {
+        "door": "near"
+      },
+      "working Area": {
+        "door": "near"
+      }
+    },
+    "id": 174,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 5,
+        "max_area_m2": 60,
+        "id": 344,
+        "style_id": 174
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Livin Rm",
+    "user_style_id": 306,
+    "thumbnail_url": "staging-styles/styles/Livin_Rm/thumbnails/Livin_Rm_thumbnail_20260629091417.jpg",
+    "description": "Auto-generated style based on provided template Livin Rm",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      1193,
+      1194,
+      1157,
+      991,
+      168
+    ],
+    "optional_assets": [
+      845
+    ],
+    "texture_rules": {
+      "outer wall": "#F9EFC8",
+      "floor": "https://zrealtystoragedev.blob.core.windows.net/textures/LowResolution/Marble/WallMountedTableMarble/Marble_LR_BaseColor.jpg",
+      "ceiling": "#ffffff",
+      "inner wall": "#F9EFC8",
+      "door_model": "6",
+      "window_model": "76"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 173,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 0,
+        "max_area_m2": 30,
+        "id": 331,
+        "style_id": 173
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "dynamic-kitchen",
+    "user_style_id": 30,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      10005,
+      10012,
+      10019,
+      10008,
+      10013,
+      10015,
+      10009,
+      10003,
+      10004,
+      10001,
+      10000
+    ],
+    "optional_assets": [
+      43,
+      10014,
+      10016,
+      10017,
+      159,
+      471
+    ],
+    "texture_rules": {
+      "inner wall": "194",
+      "outer wall": "#7C8EAE",
+      "floor": "192",
+      "ceiling": "194",
+      "window_model": "10007"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 172,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 100,
+        "id": 330,
+        "style_id": 172
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "test-issue",
+    "user_style_id": 305,
+    "thumbnail_url": "staging-styles/styles/test-issue/thumbnails/Test_20260602052502.webp",
+    "description": "test-issuetest-issue",
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [
+      545,
+      453,
+      429
+    ],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 171,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 10,
+        "max_area_m2": 100,
+        "id": 315,
+        "style_id": 171
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "mode bed 1",
+    "user_style_id": 304,
+    "thumbnail_url": "staging-styles/styles/mode_bed_1/thumbnails/mode_bed_1_thumbnail_20260530013910.png",
+    "description": "Auto-generated style based on provided template mode bed 1",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      512,
+      479,
+      470,
+      460,
+      441
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "outer wall": "#A7DBDA",
+      "floor": "https://zrealtystoragedev.blob.core.windows.net/textures/LowResolution/Marble/Marble_Bathtub/Marble021_4K-PNG_LR_Color.jpg",
+      "ceiling": "#ffffff",
+      "inner wall": "#b0bec5",
+      "door_model": "6",
+      "window_model": "106"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 170,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 0,
+        "max_area_m2": 35,
+        "id": 313,
+        "style_id": 170
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "mode bed",
+    "user_style_id": 303,
+    "thumbnail_url": "staging-styles/styles/mode_bed/thumbnails/mode_bed_thumbnail_20260530013621.jpg",
+    "description": "Auto-generated style based on provided template mode bed",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      512,
+      508,
+      509,
+      470,
+      140
+    ],
+    "optional_assets": [
+      507,
+      159
+    ],
+    "texture_rules": {
+      "outer wall": "#e6d5c3",
+      "floor": "318",
+      "ceiling": "#f7f4ef",
+      "inner wall": "#365487",
+      "door_model": "6",
+      "window_model": "106"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 169,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 0,
+        "max_area_m2": 45,
+        "id": 312,
+        "style_id": 169
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Greeny Living Room",
+    "user_style_id": 302,
+    "thumbnail_url": "staging-styles/styles/Greeny_Living_Room/thumbnails/screenshotsto-output (3)_20260521081554.webp",
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      512
+    ],
+    "optional_assets": [
+      140,
+      504,
+      38,
+      516,
+      94
+    ],
+    "texture_rules": {
+      "door_model": "161",
+      "window_model": "484",
+      "inner_wall_hex": "#FFFFFF",
+      "outer_wall_hex": "#FFFFFF",
+      "floor_hex": "#FFFFFF",
+      "ceiling_hex": "#FFFFFF"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 168,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 60,
+        "id": 311,
+        "style_id": 168
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Twin Bedroom",
+    "user_style_id": 301,
+    "thumbnail_url": "staging-styles/styles/Twin_Bedroom/thumbnails/screenshotsto-output (3)_20260519093846.webp",
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      476
+    ],
+    "optional_assets": [
+      159,
+      132,
+      20,
+      504,
+      482,
+      486,
+      497,
+      110,
+      216,
+      477,
+      140
+    ],
+    "texture_rules": {
+      "outer wall": "122",
+      "floor": "255",
+      "door_model": "6",
+      "window_model": "506",
+      "window_dressing_model": "436",
+      "inner_wall_hex": "#1515d5",
+      "ceiling_hex": "#FFFFFF"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 167,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 70,
+        "id": 314,
+        "style_id": 167
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Master Bed Room",
+    "user_style_id": 300,
+    "thumbnail_url": "staging-styles/styles/Master_Bed_Room/thumbnails/screenshotsto-output (2)_20260516143525.webp",
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      537
+    ],
+    "optional_assets": [
+      451,
+      37,
+      494,
+      38,
+      117,
+      114
+    ],
+    "texture_rules": {
+      "inner wall": "408",
+      "outer wall": "408",
+      "floor": "408",
+      "window_model": "506"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 166,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 45,
+        "id": 245,
+        "style_id": 166
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "KT Style",
+    "user_style_id": 299,
+    "thumbnail_url": "staging-styles/styles/KT_Style/thumbnails/screenshotsto-output_20260515101407.webp",
+    "description": "KT Style",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      2
+    ],
+    "optional_assets": [
+      449,
+      470,
+      47,
+      499,
+      49,
+      469,
+      134,
+      441,
+      98,
+      460,
+      38
+    ],
+    "texture_rules": {
+      "inner wall": "169",
+      "outer wall": "169",
+      "floor": "280",
+      "ceiling": "355",
+      "door_model": "6",
+      "window_model": "7",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#FFFFFF"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 165,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 45,
+        "id": 240,
+        "style_id": 165
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Bedrm",
+    "user_style_id": 298,
+    "thumbnail_url": "staging-styles/styles/Bedrm/thumbnails/Bedrm_thumbnail_20260513122704.jpg",
+    "description": "Auto-generated style based on provided template Bedrm",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      453,
+      359,
+      537,
+      514,
+      512,
+      477
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "outer wall": "83",
+      "floor": "220",
+      "ceiling": "220",
+      "inner wall": "83",
+      "door_model": "6",
+      "window_model": "106"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 164,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 0,
+        "max_area_m2": 35,
+        "id": 237,
+        "style_id": 164
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Liv Rom one",
+    "user_style_id": 297,
+    "thumbnail_url": "staging-styles/styles/Liv_Rom_one/thumbnails/Liv_Rom_one_thumbnail_20260512071657.jpg",
+    "description": "Auto-generated style based on provided template Liv Rom one",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      152,
+      514,
+      508,
+      507,
+      461,
+      166,
+      168
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "outer wall": "#b0bec5",
+      "floor": "https://zrealtystoragedev.blob.core.windows.net/textures/LowResolution/Marble/Marble012/Marble012_LR_BaseColor.png",
+      "ceiling": "#ffffff",
+      "inner wall": "#b0bec5",
+      "door_model": "6",
+      "window_model": "106"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 163,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 0,
+        "max_area_m2": 45,
+        "id": 236,
+        "style_id": 163
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testing_15",
+    "user_style_id": 296,
+    "thumbnail_url": "staging-styles/styles/testing_15/thumbnails/testing_15_thumbnail_20260512070250.png",
+    "description": "Auto-generated style based on provided template testing_15",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      449,
+      499,
+      508,
+      496
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "outer wall": "#b0bec5",
+      "floor": "textures/LowResolution/Wood/Wood%20floor%20/Wood091A_4K-PNG_LR_Color.jpg",
+      "ceiling": "#ffffff",
+      "inner wall": "#b0bec5",
+      "door_model": "6"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 162,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 15,
+        "max_area_m2": 60,
+        "id": 235,
+        "style_id": 162
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testing_14",
+    "user_style_id": 295,
+    "thumbnail_url": "staging-styles/styles/testing_14/thumbnails/testing_14_thumbnail_20260512064437.png",
+    "description": "Auto-generated style based on provided template testing_14",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {
+      "outer wall": "#b0bec5",
+      "floor": "textures/LowResolution/Wood/Wood%20floor%20/Wood091A_4K-PNG_LR_Color.jpg",
+      "ceiling": "#ffffff",
+      "inner wall": "#b0bec5",
+      "door_model": "6"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 161,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 15,
+        "max_area_m2": 60,
+        "id": 234,
+        "style_id": 161
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testing_13",
+    "user_style_id": 294,
+    "thumbnail_url": "staging-styles/styles/testing_13/thumbnails/testing_13_thumbnail_20260512062605.png",
+    "description": "Auto-generated style based on provided template testing_13",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      152,
+      467,
+      462,
+      461,
+      134,
+      468,
+      136,
+      464,
+      473,
+      437,
+      456,
+      140,
+      471,
+      450
+    ],
+    "optional_assets": [
+      386,
+      159
+    ],
+    "texture_rules": {
+      "outer wall": "#bdaebb",
+      "floor": "30",
+      "ceiling": "23",
+      "inner wall": "#7c8eae",
+      "door_model": "6"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 160,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 20,
+        "max_area_m2": 65,
+        "id": 233,
+        "style_id": 160
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testing_1",
+    "user_style_id": 293,
+    "thumbnail_url": "staging-styles/styles/testing_1/thumbnails/testing_1_thumbnail_20260512062446.png",
+    "description": "Auto-generated style based on provided template testing_1",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      463,
+      466,
+      461,
+      465,
+      460,
+      462,
+      464,
+      450,
+      469,
+      471,
+      140
+    ],
+    "optional_assets": [
+      467,
+      468,
+      475,
+      159
+    ],
+    "texture_rules": {
+      "outer wall": "#8a6b42",
+      "floor": "28",
+      "ceiling": "#ffffff",
+      "inner wall": "#7c8eae",
+      "door_model": "6"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 159,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 20,
+        "max_area_m2": 65,
+        "id": 232,
+        "style_id": 159
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "test_1",
+    "user_style_id": 292,
+    "thumbnail_url": "staging-styles/styles/test_1/thumbnails/Modern Executive Luxe Bedroom_20260504055719.webp",
+    "description": "test_1",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      2,
+      79,
+      419
+    ],
+    "optional_assets": [
+      475,
+      22
+    ],
+    "texture_rules": {
+      "outer wall": "220",
+      "door_model": "536",
+      "window_model": "484",
+      "window_dressing_model": "436",
+      "inner_wall_hex": "#6EC1B8",
+      "floor_hex": "#EEE8DF",
+      "ceiling_hex": "#FFFFFF"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 158,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 5,
+        "max_area_m2": 55,
+        "id": 231,
+        "style_id": 158
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testete",
+    "user_style_id": 291,
+    "thumbnail_url": "staging-styles/styles/testete/thumbnails/Modern Executive Luxe Bedroom_20260504054704.webp",
+    "description": "testete",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      453
+    ],
+    "optional_assets": [
+      359
+    ],
+    "texture_rules": {
+      "inner wall": "83",
+      "outer wall": "220",
+      "floor": "220",
+      "ceiling": "220",
+      "door_model": "550",
+      "window_model": "549",
+      "window_dressing_model": "547"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 157,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Drawing Room",
+        "min_area_m2": 10,
+        "max_area_m2": 50,
+        "id": 230,
+        "style_id": 157
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testentry",
+    "user_style_id": 289,
+    "thumbnail_url": "staging-styles/styles/testentry/thumbnails/Modern Executive Luxe Bedroom_20260504050641.webp",
+    "description": "test entry description",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      2
+    ],
+    "optional_assets": [
+      359
+    ],
+    "texture_rules": {
+      "inner wall": "83",
+      "outer wall": "83",
+      "floor": "270",
+      "ceiling": "106",
+      "door_model": "549",
+      "window_model": "548",
+      "window_dressing_model": "550"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 156,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Drawing Room",
+        "min_area_m2": 5,
+        "max_area_m2": 20,
+        "id": 228,
+        "style_id": 156
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testing_4",
+    "user_style_id": 284,
+    "thumbnail_url": "staging-styles/styles/testing_4/thumbnails/testing_4_thumbnail_20260430122453.png",
+    "description": "Auto-generated style based on provided template testing_4",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      504,
+      490,
+      499,
+      501,
+      158,
+      500,
+      443,
+      505,
+      502,
+      471,
+      498,
+      123,
+      168
+    ],
+    "optional_assets": [
+      503,
+      159
+    ],
+    "texture_rules": {
+      "outer wall": "#7c8eae",
+      "floor": "414",
+      "ceiling": "#ffffff",
+      "inner wall": "#f2e8d5",
+      "door_model": "6"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 155,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 50,
+        "id": 223,
+        "style_id": 155
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testing_3",
+    "user_style_id": 283,
+    "thumbnail_url": "staging-styles/styles/testing_3/thumbnails/testing_3_thumbnail_20260430115914.png",
+    "description": "Auto-generated style based on provided template testing_3",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      504,
+      490,
+      499,
+      505,
+      500,
+      443,
+      158,
+      502,
+      123,
+      471,
+      498,
+      168
+    ],
+    "optional_assets": [
+      503,
+      501,
+      159
+    ],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 154,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 50,
+        "id": 222,
+        "style_id": 154
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testing_2",
+    "user_style_id": 282,
+    "thumbnail_url": "staging-styles/styles/testing_2/thumbnails/testing_2_thumbnail_20260430114230.png",
+    "description": "Auto-generated style based on provided template testing_2",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      504,
+      490,
+      499,
+      505,
+      500,
+      443,
+      158,
+      502,
+      123,
+      471,
+      498,
+      168
+    ],
+    "optional_assets": [
+      503,
+      501,
+      159
+    ],
+    "texture_rules": {
+      "outer wall": "#7c8eae",
+      "floor": "414",
+      "ceiling": "#ffffff",
+      "inner wall": "#f2e8d5"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 153,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 50,
+        "id": 221,
+        "style_id": 153
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "my own bed design ",
+    "user_style_id": 281,
+    "thumbnail_url": "staging-styles/styles/my_own_bed_design_/thumbnails/my_own_bed_design__thumbnail_20260429143338.png",
+    "description": "Auto-generated style based on provided template my own bed design ",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      39,
+      107,
+      116,
+      90,
+      443,
+      108,
+      104,
+      103,
+      49,
+      352,
+      44,
+      102
+    ],
+    "optional_assets": [
+      159
+    ],
+    "texture_rules": {
+      "outer wall": "#7c8eae",
+      "floor": "#d9c3a5",
+      "ceiling": "#f7efe6",
+      "inner wall": "#e8cfc3",
+      "window_model": "12",
+      "window_dressing_model": "119"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 152,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 0,
+        "max_area_m2": 40,
+        "id": 220,
+        "style_id": 152
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "my own design 1",
+    "user_style_id": 280,
+    "thumbnail_url": "staging-styles/styles/my_own_design_1/thumbnails/my_own_design_1_thumbnail_20260428103722.png",
+    "description": "Auto-generated style based on provided template my own design 1",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      476,
+      483,
+      481,
+      471,
+      480,
+      486,
+      478,
+      477,
+      479,
+      140
+    ],
+    "optional_assets": [
+      482,
+      485,
+      159
+    ],
+    "texture_rules": {
+      "outer wall": "#7c8eae",
+      "floor": "192",
+      "ceiling": "#e2e3de",
+      "inner wall": "#f7f7ff",
+      "door_model": "6",
+      "window_model": "7"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 151,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 0,
+        "max_area_m2": 45,
+        "id": 219,
+        "style_id": 151
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "new ",
+    "user_style_id": 279,
+    "thumbnail_url": "staging-styles/styles/new_/thumbnails/new__thumbnail_20260428070749.png",
+    "description": "Auto-generated style based on provided template new ",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {
+      "outer wall": "#b0bec5",
+      "floor": "https://zrealtystoragedev.blob.core.windows.net/textures/LowResolution/Stone/Rustic_Stonewall_18/stonewall_18_LR_BaseColor-4K.png",
+      "ceiling": "#ffffff",
+      "inner wall": "#b0bec5"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 150,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Office Room",
+        "min_area_m2": 0,
+        "max_area_m2": 35,
+        "id": 218,
+        "style_id": 150
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Modern Walnut Serenity",
+    "user_style_id": 278,
+    "thumbnail_url": "staging-styles/styles/Modern_Walnut_Serenity/thumbnails/Modern Walnut Serenity_20260311110059.webp",
+    "description": "Modern Walnut Serenity",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      512
+    ],
+    "optional_assets": [
+      508,
+      456,
+      159,
+      140,
+      470,
+      510,
+      486,
+      514,
+      509,
+      469,
+      515,
+      516,
+      507,
+      478
+    ],
+    "texture_rules": {
+      "floor": "318",
+      "door_model": "6",
+      "window_model": "484",
+      "window_dressing_model": "511",
+      "inner_wall_hex": "#E6D5C3",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#F7F4EF"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 149,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 40,
+        "id": 205,
+        "style_id": 149
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Walnut Calm Living",
+    "user_style_id": 277,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/staging-styles/styles/Walnut_Calm_Living/thumbnails/Walnut%20Calm%20Living_20260310103421.webp",
+    "description": "Walnut Calm Living",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      504
+    ],
+    "optional_assets": [
+      503,
+      502,
+      498,
+      500,
+      159,
+      158,
+      499,
+      490,
+      471,
+      443,
+      501,
+      505,
+      123
+    ],
+    "texture_rules": {
+      "floor": "414",
+      "window_model": "506",
+      "inner_wall_hex": "#F2E8D5",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#FFFFFF"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 148,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 40,
+        "id": 343,
+        "style_id": 148
+      }
+    ],
+    "pattern_rules": [
+      {
+        "surface_type": "floor",
+        "pattern_type": "vertical_slat",
+        "user_texture_id": null,
+        "color_hex": "#F7F5F2",
+        "width_cm": 10,
+        "height_cm": 0,
+        "gap_cm": 5,
+        "inset_percent": 0,
+        "thickness_cm": 50,
+        "polygon_points": null,
+        "id": 74,
+        "style_id": 148
+      },
+      {
+        "surface_type": "wall",
+        "pattern_type": "baseboard",
+        "user_texture_id": 414,
+        "color_hex": "#ffffff",
+        "width_cm": 0,
+        "height_cm": 30,
+        "gap_cm": 0,
+        "inset_percent": 0,
+        "thickness_cm": 0,
+        "polygon_points": null,
+        "id": 75,
+        "style_id": 148
+      },
+      {
+        "surface_type": "ceiling",
+        "pattern_type": "shoji_grid",
+        "user_texture_id": null,
+        "color_hex": "#4A3728",
+        "width_cm": 3,
+        "height_cm": 0,
+        "gap_cm": 40,
+        "inset_percent": 0,
+        "thickness_cm": 0,
+        "polygon_points": null,
+        "id": 76,
+        "style_id": 148
+      },
+      {
+        "surface_type": "wall",
+        "pattern_type": "coffered_ceiling",
+        "user_texture_id": null,
+        "color_hex": "#0a0a0a",
+        "width_cm": 0,
+        "height_cm": 0,
+        "gap_cm": 0,
+        "inset_percent": 10,
+        "thickness_cm": 0,
+        "polygon_points": null,
+        "id": 77,
+        "style_id": 148
+      }
+    ]
+  },
+  {
+    "name": "Minimalist Work Retreat",
+    "user_style_id": 276,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Minimalist_Work_Retreat/thumbnails/Minimalist%20Work%20Retreat_20260309131335.webp",
+    "description": "Minimalist Work Retreat",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      497
+    ],
+    "optional_assets": [
+      495,
+      492,
+      496,
+      159,
+      488,
+      462,
+      489,
+      494,
+      490,
+      491,
+      471,
+      493,
+      460,
+      140
+    ],
+    "texture_rules": {
+      "floor": "412",
+      "door_model": "single slidingdoor",
+      "window_model": "135",
+      "window_dressing_model": "436",
+      "inner_wall_hex": "#CCBEB1",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#D2D4CF"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 147,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Office Room",
+        "min_area_m2": 15,
+        "max_area_m2": 55,
+        "id": 201,
+        "style_id": 147
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Modern Glam Contemporary",
+    "user_style_id": 275,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Modern_Glam_Contemporary/thumbnails/Modern%20Glam%20Contemporary_20260306102637.webp",
+    "description": "Modern Glam Contemporary",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      449
+    ],
+    "optional_assets": [
+      204,
+      454,
+      456,
+      157,
+      138,
+      136,
+      470,
+      482,
+      483,
+      466,
+      450,
+      145,
+      117,
+      175,
+      150,
+      443,
+      485,
+      159
+    ],
+    "texture_rules": {
+      "floor": "41",
+      "door_model": "74",
+      "window_model": "76",
+      "window_dressing_model": "436",
+      "inner_wall_hex": "#573133",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#FFFFFF"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 146,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 45,
+        "id": 207,
+        "style_id": 146
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Modern Minimalistic Bedroom",
+    "user_style_id": 274,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Modern_Minimalistic_Bedroom/thumbnails/modern_minimalist_bedroom_20260304153932.webp",
+    "description": "Modern Minimalistic Bedroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      476
+    ],
+    "optional_assets": [
+      479,
+      481,
+      456,
+      159,
+      140,
+      482,
+      483,
+      486,
+      478,
+      471,
+      477,
+      480,
+      485,
+      450
+    ],
+    "texture_rules": {
+      "floor": "192",
+      "door_model": "6",
+      "window_model": "484",
+      "inner_wall_hex": "#F7F7FF",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#E2E3DE"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 145,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 40,
+        "id": 208,
+        "style_id": 145
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Casa Terra Contemporary",
+    "user_style_id": 273,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Casa_Terra_Contemporary/thumbnails/Casa%20Terra%20Contemporary_20260303155843.webp",
+    "description": "Casa Terra Contemporary",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      152
+    ],
+    "optional_assets": [
+      195,
+      386,
+      464,
+      467,
+      452,
+      456,
+      140,
+      136,
+      128,
+      468,
+      462,
+      461,
+      450,
+      473,
+      134,
+      471,
+      437,
+      472,
+      159
+    ],
+    "texture_rules": {
+      "floor": "30",
+      "ceiling": "23",
+      "door_model": "74",
+      "window_model": "76",
+      "inner_wall_hex": "#9E7C6F",
+      "outer_wall_hex": "#7C8EAE"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 144,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 45,
+        "id": 209,
+        "style_id": 144
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Timber Luxe Living",
+    "user_style_id": 272,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Timber_Luxe_Living/thumbnails/Timber%20Luxe%20Living_20260302173252.webp",
+    "description": "Timber Luxe Living",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      463
+    ],
+    "optional_assets": [
+      464,
+      467,
+      159,
+      140,
+      468,
+      465,
+      462,
+      461,
+      469,
+      466,
+      450,
+      471,
+      460,
+      475
+    ],
+    "texture_rules": {
+      "floor": "28",
+      "door_model": "161",
+      "window_model": "76",
+      "window_dressing_model": "436",
+      "inner_wall_hex": "#FAF5EB",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": ":#ffffff"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 143,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 40,
+        "id": 210,
+        "style_id": 143
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Soft Modern Haven",
+    "user_style_id": 271,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Soft_Modern_Haven/thumbnails/soft_modern_haven_20260302110527.webp",
+    "description": "Soft Modern Haven",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      449
+    ],
+    "optional_assets": [
+      454,
+      452,
+      156,
+      159,
+      158,
+      157,
+      140,
+      470,
+      459,
+      444,
+      450,
+      25,
+      394,
+      453
+    ],
+    "texture_rules": {
+      "door_model": "161",
+      "window_model": "76",
+      "window_dressing_model": "436",
+      "inner_wall_hex": "#D1CB97",
+      "outer_wall_hex": "#7C8EAE",
+      "floor_hex": "#2E2420",
+      "ceiling_hex": "#F7F7F5"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 142,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 40,
+        "id": 211,
+        "style_id": 142
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Modern Executive Office",
+    "user_style_id": 270,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Modern_Executive_Office/thumbnails/modern_executive_office_20260227144005.webp",
+    "description": "Modern Executive Office",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      450
+    ],
+    "optional_assets": [
+      453,
+      451,
+      454,
+      449,
+      452,
+      456,
+      159,
+      140,
+      435,
+      458,
+      457,
+      459
+    ],
+    "texture_rules": {
+      "door_model": "161",
+      "window_model": "76",
+      "window_dressing_model": "436",
+      "inner_wall_hex": "#C8BEB3",
+      "outer_wall_hex": "#7C8EAE",
+      "floor_hex": "#3A342F",
+      "ceiling_hex": "#F4F1EC"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 141,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Office Room",
+        "min_area_m2": 15,
+        "max_area_m2": 55,
+        "id": 200,
+        "style_id": 141
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Classic Luxe Living Area",
+    "user_style_id": 269,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Classic_Luxe_Living_Area/thumbnails/Classic%20Luxe%20Living%20Area_20260226181305.webp",
+    "description": "Classic Luxe Living Area",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      88
+    ],
+    "optional_assets": [
+      359,
+      78,
+      89,
+      207,
+      439,
+      30,
+      153,
+      140,
+      132,
+      470,
+      444,
+      360,
+      212,
+      23,
+      433,
+      81
+    ],
+    "texture_rules": {
+      "floor": "30",
+      "door_model": "379",
+      "window_model": "106",
+      "window_dressing_model": "436",
+      "inner_wall_hex": "#DED6CA",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#DED6CA"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 140,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 40,
+        "id": 212,
+        "style_id": 140
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Organic Modern Bedroom",
+    "user_style_id": 268,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Organic_Modern_Bedroom/thumbnails/Organic%20Modern%20Bedroom_20260226134133.webp",
+    "description": "Organic Modern Bedroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      107
+    ],
+    "optional_assets": [
+      102,
+      90,
+      39,
+      49,
+      109,
+      44,
+      108,
+      116,
+      443,
+      104,
+      103,
+      352,
+      159
+    ],
+    "texture_rules": {
+      "window_model": "130",
+      "window_dressing_model": "119",
+      "inner_wall_hex": "#E8CFC3",
+      "outer_wall_hex": "#7C8EAE",
+      "floor_hex": "#D9C3A5",
+      "ceiling_hex": "#F7EFE6"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 139,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 40,
+        "id": 213,
+        "style_id": 139
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Contemporary Drawing Room",
+    "user_style_id": 267,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Contemporary_Drawing_Room/thumbnails/Soft%20Contemporary%20Drawing%20Room_20260226104045.webp",
+    "description": "Contemporary Drawing Room",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      145
+    ],
+    "optional_assets": [
+      95,
+      204,
+      99,
+      159,
+      132,
+      138,
+      50,
+      364,
+      144,
+      116,
+      143,
+      213,
+      104,
+      103
+    ],
+    "texture_rules": {
+      "floor": "280",
+      "door_model": "161",
+      "window_model": "130",
+      "window_dressing_model": "151",
+      "inner_wall_hex": "#B8B5BA",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#7A7874"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 138,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Drawing Room",
+        "min_area_m2": 3,
+        "max_area_m2": 35,
+        "id": 217,
+        "style_id": 138
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Scandinavian Livingroom",
+    "user_style_id": 266,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Scandinavian_Livingroom/thumbnails/scandinavian_livingroom_20260225163929.webp",
+    "description": "Scandinavian Livingroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      203
+    ],
+    "optional_assets": [
+      31,
+      439,
+      153,
+      158,
+      157,
+      140,
+      435,
+      440,
+      444,
+      360,
+      165,
+      438,
+      437,
+      433,
+      159
+    ],
+    "texture_rules": {
+      "floor": "23",
+      "window_model": "76",
+      "window_dressing_model": "436",
+      "inner_wall_hex": "#8FA3A6",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#F9F4EA"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 137,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 40,
+        "id": 214,
+        "style_id": 137
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Scandinavian Bedroom",
+    "user_style_id": 265,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Scandinavian_Bedroom/thumbnails/scandinavian_bedroom_20260225130720.webp",
+    "description": "Scandinavian Bedroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      124
+    ],
+    "optional_assets": [
+      439,
+      140,
+      435,
+      448,
+      440,
+      444,
+      432,
+      441,
+      438,
+      437,
+      36,
+      434,
+      433,
+      159
+    ],
+    "texture_rules": {
+      "floor": "328",
+      "door_model": "161",
+      "window_model": "76",
+      "window_dressing_model": "436",
+      "inner_wall_hex": "#C7D2C2",
+      "outer_wall_hex": "#7C8EAE",
+      "floor_hex": "Woodplank36",
+      "ceiling_hex": "#F3E9D7"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 136,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 40,
+        "id": 215,
+        "style_id": 136
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Modern Playful Kids Bedroom",
+    "user_style_id": 264,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Modern_Playful_Kids_Bedroom/thumbnails/Modern%20Playful%20Kids%20Bedroom_20260225115909.webp",
+    "description": "Modern Playful Kids Bedroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      423
+    ],
+    "optional_assets": [
+      422,
+      418,
+      417,
+      419,
+      424,
+      416,
+      425,
+      426,
+      420,
+      44,
+      159
+    ],
+    "texture_rules": {
+      "window_model": "76",
+      "window_dressing_model": "421",
+      "inner_wall_hex": "#6EC1B8",
+      "outer_wall_hex": "#7C8EAE",
+      "floor_hex": "#7A5C45",
+      "ceiling_hex": "#FAFAF7"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 135,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 3,
+        "max_area_m2": 35,
+        "id": 216,
+        "style_id": 135
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Arabian Style",
+    "user_style_id": 263,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Arabian_Style/thumbnails/tropical-sunrise_20260224175826.webp",
+    "description": null,
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [
+      68
+    ],
+    "optional_assets": [
+      69
+    ],
+    "texture_rules": {},
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 134,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 10,
+        "max_area_m2": 12,
+        "id": 178,
+        "style_id": 134
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Traditional Play room",
+    "user_style_id": 262,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Traditional_Play_room/thumbnails/screenshot_current_1920x1080_2026-01-01T07-32-29_20260216061246.webp",
+    "description": "Traditional Play room",
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [
+      106
+    ],
+    "optional_assets": [
+      105
+    ],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 133,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 20,
+        "max_area_m2": 50,
+        "id": 175,
+        "style_id": 133
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Test Dev 13",
+    "user_style_id": 261,
+    "thumbnail_url": null,
+    "description": "Test Dev 13",
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [
+      11
+    ],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 132,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Office Room",
+        "min_area_m2": 10,
+        "max_area_m2": 50,
+        "id": 174,
+        "style_id": 132
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "test",
+    "user_style_id": 260,
+    "thumbnail_url": null,
+    "description": "test",
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [
+      383
+    ],
+    "optional_assets": [
+      1
+    ],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 131,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 10,
+        "max_area_m2": 50,
+        "id": 173,
+        "style_id": 131
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Sheik testing",
+    "user_style_id": 259,
+    "thumbnail_url": null,
+    "description": "Sheik testing",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      2
+    ],
+    "optional_assets": [
+      11
+    ],
+    "texture_rules": {
+      "inner_wall_hex": "#6EC1B8",
+      "outer_wall_hex": "#7C8EAE"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 130,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 5,
+        "max_area_m2": 55,
+        "id": 172,
+        "style_id": 130
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Quiet Luxury Livingroom",
+    "user_style_id": 258,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Quiet_Luxury_Livingroom/thumbnails/Quiet%20Luxury%20Livingroom_20260213182741.webp",
+    "description": "Quiet Luxury Livingroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      203
+    ],
+    "optional_assets": [
+      30,
+      156,
+      159,
+      132,
+      62,
+      49,
+      60,
+      117,
+      149,
+      120,
+      141,
+      134,
+      212,
+      23,
+      25
+    ],
+    "texture_rules": {
+      "inner wall": "407",
+      "floor": "296",
+      "ceiling": "296",
+      "door_model": "105",
+      "window_model": "135",
+      "outer_wall_hex": "#7C8EAE"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 129,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 171,
+        "style_id": 129
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Modern Jewel Tone Livingroom",
+    "user_style_id": 257,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Modern_Jewel_Tone_Livingroom/thumbnails/Modern%20Jewel%20Tone%20Livingroom_20260213181216.webp",
+    "description": "Modern Jewel Tone Livingroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      146
+    ],
+    "optional_assets": [
+      90,
+      178,
+      156,
+      159,
+      155,
+      62,
+      63,
+      123,
+      121,
+      116,
+      149,
+      139,
+      150,
+      141,
+      352
+    ],
+    "texture_rules": {
+      "floor": "114",
+      "door_model": "161",
+      "window_model": "76",
+      "window_dressing_model": "151",
+      "inner_wall_hex": "#2F5D62",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#F5F4F0"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 128,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 168,
+        "style_id": 128
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Soft Minimal Bathroom",
+    "user_style_id": 256,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Soft_Minimal_Bathroom/thumbnails/Soft%20Minimal%20Bathroom_20260213175825.webp",
+    "description": "Soft Minimal Bathroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      12
+    ],
+    "optional_assets": [
+      112,
+      219,
+      170,
+      19,
+      159
+    ],
+    "texture_rules": {
+      "floor": "408",
+      "window_model": "176",
+      "inner_wall_hex": "#E6E6E1",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#B4BAB3"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 127,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 2,
+        "max_area_m2": 55,
+        "id": 167,
+        "style_id": 127
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Luxury Marble Bathroom",
+    "user_style_id": 255,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Luxury_Marble_Bathroom/thumbnails/Luxury%20Marble%20Bathroom_20260213175014.webp",
+    "description": "Luxury Marble Bathroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      71
+    ],
+    "optional_assets": [
+      111,
+      170,
+      171,
+      159
+    ],
+    "texture_rules": {
+      "inner wall": "355",
+      "floor": "323",
+      "window_model": "176",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#FAF5EB"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 126,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 2,
+        "max_area_m2": 55,
+        "id": 166,
+        "style_id": 126
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Warm Contemporary Kitchen",
+    "user_style_id": 254,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Warm_Contemporary_Kitchen/thumbnails/Warm%20Contemporary%20Kitchen_20260213174425.webp",
+    "description": "Warm Contemporary Kitchen",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      160
+    ],
+    "optional_assets": [
+      43,
+      51,
+      163,
+      25,
+      159
+    ],
+    "texture_rules": {
+      "floor": "30",
+      "ceiling": "23",
+      "window_model": "135",
+      "inner_wall_hex": "#9E7C6F",
+      "outer_wall_hex": "#7C8EAE"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 125,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 55,
+        "id": 165,
+        "style_id": 125
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Urban Modern Bedroom",
+    "user_style_id": 253,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Urban_Modern_Bedroom/thumbnails/Urban%20Modern%20Bedroom_20260213173344.webp",
+    "description": "Urban Modern Bedroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      124
+    ],
+    "optional_assets": [
+      95,
+      94,
+      89,
+      80,
+      195,
+      178,
+      140,
+      9,
+      60,
+      145,
+      25,
+      159
+    ],
+    "texture_rules": {
+      "floor": "27",
+      "door_model": "161",
+      "window_model": "135",
+      "inner_wall_hex": "#2F5C61",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#F7F1E1"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 124,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 164,
+        "style_id": 124
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Modern Marble Kitchen",
+    "user_style_id": 252,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Modern_Marble_Kitchen/thumbnails/Modern%20Marble%20Kitchen_20260213172345.webp",
+    "description": "Modern Marble Kitchen",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      184
+    ],
+    "optional_assets": [
+      70,
+      217,
+      164,
+      159
+    ],
+    "texture_rules": {
+      "inner wall": "355",
+      "floor": "408",
+      "window_model": "76",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#FAF5EB"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 123,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 55,
+        "id": 163,
+        "style_id": 123
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Warm Modern Kitchen",
+    "user_style_id": 251,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Warm_Modern_Kitchen/thumbnails/Warm%20Modern%20Kitchen_20260213171625.webp",
+    "description": "Warm Modern Kitchen",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      160
+    ],
+    "optional_assets": [
+      162,
+      114,
+      159
+    ],
+    "texture_rules": {
+      "inner wall": "114",
+      "floor": "28",
+      "window_model": "106",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#FAF5EB"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 122,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 55,
+        "id": 162,
+        "style_id": 122
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Modern Luxury Bathroom",
+    "user_style_id": 250,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Modern_Luxury_Bathroom/thumbnails/Modern%20Luxury%20Bathroom_20260213170920.webp",
+    "description": "Modern Luxury Bathroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      58
+    ],
+    "optional_assets": [
+      182,
+      181,
+      183,
+      52,
+      55,
+      159
+    ],
+    "texture_rules": {
+      "inner wall": "280",
+      "floor": "23",
+      "ceiling": "23",
+      "window_model": "176",
+      "outer_wall_hex": "#7C8EAE"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 121,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 2,
+        "max_area_m2": 55,
+        "id": 161,
+        "style_id": 121
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Urban Spa Bathroom",
+    "user_style_id": 249,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Urban_Spa_Bathroom/thumbnails/Urban%20Spa%20Bathroom_20260213170021.webp",
+    "description": "Urban Spa Bathroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      172
+    ],
+    "optional_assets": [
+      72,
+      210,
+      171,
+      173,
+      159
+    ],
+    "texture_rules": {
+      "inner wall": "37",
+      "floor": "23",
+      "ceiling": "23",
+      "window_model": "176",
+      "outer_wall_hex": "#7C8EAE"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 120,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 2,
+        "max_area_m2": 55,
+        "id": 160,
+        "style_id": 120
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Warm Modern Livingroom",
+    "user_style_id": 243,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Warm_Modern_Livingroom/thumbnails/Warm%20Modern%20Livingroom_20260213144524.webp",
+    "description": "Warm Modern Livingroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      3
+    ],
+    "optional_assets": [
+      359,
+      78,
+      194,
+      204,
+      353,
+      156,
+      159,
+      158,
+      157,
+      358,
+      122,
+      121,
+      117,
+      148,
+      44
+    ],
+    "texture_rules": {
+      "floor": "22",
+      "door_model": "161",
+      "window_model": "135",
+      "window_dressing_model": "119",
+      "inner_wall_hex": "#E6E2DC",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#F7F6F2"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 119,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 159,
+        "style_id": 119
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Master Bedroom Suite",
+    "user_style_id": 239,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Master_Bedroom_Suite/thumbnails/modern_master_suite_20260131085505.webp",
+    "description": "Master Bedroom Suite",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      96,
+      131,
+      98,
+      141,
+      49,
+      60,
+      152,
+      31,
+      140,
+      25,
+      41,
+      126
+    ],
+    "optional_assets": [
+      159,
+      116,
+      95,
+      175,
+      352,
+      360,
+      361,
+      359,
+      371
+    ],
+    "texture_rules": {
+      "floor": "30",
+      "door_model": "161",
+      "window_model": "130",
+      "window_dressing_model": "119",
+      "inner_wall_hex": "#E6E4E1",
+      "outer_wall_hex": "#7C8EAE",
+      "ceiling_hex": "#F5F5F0"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 118,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 156,
+        "style_id": 118
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Contemporary Livingroom",
+    "user_style_id": 238,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/contemporary_livingroom/thumbnails/contemporary_livingroom_20260127104858.png",
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      203,
+      31,
+      44,
+      159,
+      166
+    ],
+    "optional_assets": [
+      38,
+      79,
+      101,
+      116,
+      358,
+      62,
+      165,
+      134,
+      361
+    ],
+    "texture_rules": {
+      "outer wall": "#7C8EAE",
+      "floor": "318",
+      "door_model": "35",
+      "window_model": "135",
+      "window_dressing_model": "151",
+      "inner_wall_hex": "#4F8698",
+      "ceiling_hex": "#939393"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 116,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 177,
+        "style_id": 116
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Contemporary Modern",
+    "user_style_id": 237,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Contemporary_Modern/thumbnails/contemporary_modern_bedroom_20260127070321.png",
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      107,
+      11,
+      133,
+      142,
+      159
+    ],
+    "optional_assets": [
+      120,
+      14,
+      175,
+      178,
+      50,
+      131,
+      158,
+      153,
+      148
+    ],
+    "texture_rules": {
+      "inner wall": "254",
+      "outer wall": "#7C8EAE",
+      "floor": "151",
+      "ceiling": "67",
+      "door_model": "35",
+      "window_model": "106",
+      "window_dressing_model": "119"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 115,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 176,
+        "style_id": 115
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "style123",
+    "user_style_id": 242,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [
+      11,
+      450
+    ],
+    "optional_assets": [
+      428
+    ],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 108,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 2,
+        "max_area_m2": 55,
+        "id": 155,
+        "style_id": 108
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Laundry Room",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [
+      16,
+      111,
+      55
+    ],
+    "optional_assets": [
+      210,
+      178
+    ],
+    "texture_rules": {},
+    "is_public": true,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 107,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Laundry Room",
+        "min_area_m2": 3,
+        "max_area_m2": 20,
+        "id": 153,
+        "style_id": 107
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Testdemo-2",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [
+      11,
+      1,
+      105
+    ],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 106,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 157,
+        "style_id": 106
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "test-71",
+    "user_style_id": 234,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [
+      11,
+      323
+    ],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 105,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Office Room",
+        "min_area_m2": 10,
+        "max_area_m2": 100,
+        "id": 150,
+        "style_id": 105
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Anglo Indian Style",
+    "user_style_id": 92,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Anglo_Indian_Style/thumbnails/pool_20251229092642.webp",
+    "description": "Anglo Indian style",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      2,
+      81,
+      78
+    ],
+    "optional_assets": [
+      22,
+      105
+    ],
+    "texture_rules": {
+      "inner wall": "220",
+      "outer_wall_hex": "#e02424",
+      "floor_hex": "#00ff00"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 104,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Office Room",
+        "min_area_m2": 35,
+        "max_area_m2": 50,
+        "id": 148,
+        "style_id": 104
+      },
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 55,
+        "max_area_m2": 70,
+        "id": 149,
+        "style_id": 104
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "test-51",
+    "user_style_id": 91,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {
+      "outer wall": "220",
+      "floor": "106",
+      "inner_wall_hex": "#852e2e",
+      "ceiling_hex": "#1e5871"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 103,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 141,
+        "style_id": 103
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "test-50",
+    "user_style_id": 90,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {
+      "outer wall": "132",
+      "ceiling": "106",
+      "inner_wall_hex": "#8c1717",
+      "floor_hex": "#ae5b5b"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 102,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 140,
+        "style_id": 102
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "test-2-26",
+    "user_style_id": 89,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [
+      11,
+      1
+    ],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 101,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 100,
+        "id": 137,
+        "style_id": 101
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "test-26-12-2025",
+    "user_style_id": 88,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/test-26-12-2025/thumbnails/OIP_20251226071705.webp",
+    "description": "added",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      1,
+      2
+    ],
+    "optional_assets": [
+      11,
+      105
+    ],
+    "texture_rules": {
+      "inner wall": "101",
+      "outer wall": "355",
+      "ceiling": "215",
+      "door_model": "6",
+      "window_model": "76",
+      "window_dressing_model": "151"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 100,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 136,
+        "style_id": 100
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "High-Rise Modern",
+    "user_style_id": 87,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/High-Rise_Modern/thumbnails/High%20rise%20image_20251226064810.webp",
+    "description": "Assets added for High rise style",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      2,
+      11,
+      158
+    ],
+    "optional_assets": [
+      25,
+      29,
+      99,
+      126,
+      127,
+      138,
+      157,
+      132
+    ],
+    "texture_rules": {
+      "outer wall": "83",
+      "floor": "105",
+      "door_model": "74",
+      "window_model": "115",
+      "window_dressing_model": "119",
+      "inner_wall_hex": "#ffea00",
+      "ceiling_hex": "#00ff00"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 99,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 139,
+        "style_id": 99
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Structural Pro",
+    "user_style_id": 86,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Structural_Pro/thumbnails/modern_office1_20251224120555.png",
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      2,
+      28,
+      22,
+      102,
+      77
+    ],
+    "optional_assets": [
+      28,
+      22,
+      77
+    ],
+    "texture_rules": {
+      "inner wall": "215",
+      "outer wall": "101",
+      "door_model": "105",
+      "window_model": "7",
+      "window_dressing_model": "137",
+      "floor_hex": "#2d4136",
+      "ceiling_hex": "#d5d3d5"
+    },
+    "is_public": true,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 98,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 133,
+        "style_id": 98
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "demo-18",
+    "user_style_id": 85,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [
+      1,
+      2,
+      105
+    ],
+    "optional_assets": [
+      11,
+      28,
+      22,
+      102,
+      68
+    ],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 97,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 10,
+        "max_area_m2": 96,
+        "id": 129,
+        "style_id": 97
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "demo-17",
+    "user_style_id": 84,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [
+      11,
+      1
+    ],
+    "optional_assets": [
+      2,
+      105
+    ],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 96,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 10,
+        "max_area_m2": 20,
+        "id": 128,
+        "style_id": 96
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "demo-15",
+    "user_style_id": 83,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/demo-15/thumbnails/image%20(7)_20251222122937.png",
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "311",
+      "outer_wall_hex": "#792a2a"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 95,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 10,
+        "max_area_m2": 49,
+        "id": 124,
+        "style_id": 95
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "demo-14",
+    "user_style_id": 82,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      11
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "454"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 94,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "test4",
+        "min_area_m2": 10,
+        "max_area_m2": 200,
+        "id": 122,
+        "style_id": 94
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "demo-13",
+    "user_style_id": 81,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      11
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "453"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 93,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 4,
+        "max_area_m2": 400,
+        "id": 119,
+        "style_id": 93
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "demo-10",
+    "user_style_id": 71,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner_wall_hex": "#FFFFFF",
+      "outer_wall_hex": "#FFFFFF",
+      "floor_hex": "#FFFFFF",
+      "ceiling_hex": "#FFFFFF"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 92,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 118,
+        "style_id": 92
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "demo-7",
+    "user_style_id": 70,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/demo-7/thumbnails/image%20(7)_20251222092102.png",
+    "description": "demo-7 has been added",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      1,
+      11
+    ],
+    "optional_assets": [
+      2,
+      105
+    ],
+    "texture_rules": {
+      "inner wall": "457",
+      "floor": "455",
+      "door_model": "272",
+      "window_model": "271",
+      "window_dressing_model": "270",
+      "outer_wall_hex": "#AAAAAAedited",
+      "ceiling_hex": "#VVVVVedited"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 91,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "test",
+        "min_area_m2": 10,
+        "max_area_m2": 100,
+        "id": 116,
+        "style_id": 91
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "demo-5",
+    "user_style_id": 69,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": false,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner_wall_hex": "#FFFFFF",
+      "outer_wall_hex": "#FFFFFF",
+      "floor_hex": "#FFFFFF",
+      "ceiling_hex": "#FAFWQEF"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 90,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Deluxe Rooms",
+        "min_area_m2": 10,
+        "max_area_m2": 200,
+        "id": 109,
+        "style_id": 90
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "demo-4",
+    "user_style_id": 68,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": false,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 89,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 10,
+        "max_area_m2": 200,
+        "id": 107,
+        "style_id": 89
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "demo-3",
+    "user_style_id": 67,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": false,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 88,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Office Room",
+        "min_area_m2": 20,
+        "max_area_m2": 100,
+        "id": 106,
+        "style_id": 88
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "demo-2",
+    "user_style_id": 66,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": false,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {
+      "door_model": "272",
+      "window_model": "271",
+      "window_dressing_model": "270"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 87,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 10,
+        "max_area_m2": 100,
+        "id": 105,
+        "style_id": 87
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "demo-1",
+    "user_style_id": 65,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/demo-1/thumbnails/image%20(7)_20251222071110.png",
+    "description": "demo 1 has been added",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      11
+    ],
+    "optional_assets": [
+      1
+    ],
+    "texture_rules": {
+      "inner wall": "455",
+      "ceiling": "454",
+      "door_model": "6",
+      "window_model": "7",
+      "window_dressing_model": "151"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 86,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 10,
+        "max_area_m2": 100,
+        "id": 104,
+        "style_id": 86
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Customized living room",
+    "user_style_id": 64,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Customized_living_room/thumbnails/image%20(7)_20251220124111.png",
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      152,
+      140,
+      158
+    ],
+    "optional_assets": [
+      153,
+      156,
+      159,
+      183
+    ],
+    "texture_rules": {
+      "inner wall": "#d9c8a6",
+      "outer wall": "#F8F1E1",
+      "floor": "3",
+      "ceiling": "#d9c8a6",
+      "door_model": "6",
+      "window_model": "7",
+      "window_dressing_model": "151"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 85,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 103,
+        "style_id": 85
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Customized  Bedroom",
+    "user_style_id": 63,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Customized__Bedroom/thumbnails/image%20(6)_20251220112659.png",
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      152,
+      158
+    ],
+    "optional_assets": [
+      153,
+      140,
+      183
+    ],
+    "texture_rules": {
+      "inner wall": "#d9c8a6",
+      "outer wall": "#F8F1E1",
+      "floor": "3",
+      "ceiling": "#d9c8a6",
+      "door_model": "105",
+      "window_model": "7",
+      "window_dressing_model": "151"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 84,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 102,
+        "style_id": 84
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Testing demo-24",
+    "user_style_id": null,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Testing_demo-24/thumbnails/790033_20251220054540.png",
+    "description": "added",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      11,
+      1
+    ],
+    "optional_assets": [
+      2,
+      105
+    ],
+    "texture_rules": {
+      "inner wall": "445",
+      "outer wall": "Bed_Mattress_Dark123512",
+      "floor": "446",
+      "ceiling": "446",
+      "door_model": "253",
+      "window_model": "252",
+      "window_dressing_model": "251"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 83,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 100,
+        "id": 99,
+        "style_id": 83
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Testing demo-23",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 82,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Deluxe Rooms",
+        "min_area_m2": 1,
+        "max_area_m2": 2,
+        "id": 98,
+        "style_id": 82
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testing demo-22",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 81,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Deluxe Rooms",
+        "min_area_m2": 1,
+        "max_area_m2": 2,
+        "id": 97,
+        "style_id": 81
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Testing demo-21",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 80,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 4,
+        "max_area_m2": 8,
+        "id": 96,
+        "style_id": 80
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testing demo-20",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 79,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Deluxe Rooms",
+        "min_area_m2": 10,
+        "max_area_m2": 20,
+        "id": 95,
+        "style_id": 79
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Testing demo-17",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 78,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dining Rooms",
+        "min_area_m2": 10,
+        "max_area_m2": 20,
+        "id": 94,
+        "style_id": 78
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Testing demo-14",
+    "user_style_id": null,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Testing_demo-14/thumbnails/790033_20251219171314.png",
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "445",
+      "outer wall": "445",
+      "floor": "445",
+      "ceiling": "445",
+      "window_dressing_model": "251"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 77,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 100,
+        "id": 93,
+        "style_id": 77
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Testing demo-12",
+    "user_style_id": null,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Testing_demo-12/thumbnails/790033_20251219123919.png",
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "445",
+      "outer wall": "445",
+      "floor": "445",
+      "ceiling": "443",
+      "window_dressing_model": "247"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 76,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dining Rooms",
+        "min_area_m2": 5,
+        "max_area_m2": 20,
+        "id": 91,
+        "style_id": 76
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testing demo-10",
+    "user_style_id": null,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/testing_demo-10/thumbnails/790033_20251219121716.png",
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "445",
+      "outer wall": "443",
+      "floor": "445",
+      "ceiling": "445",
+      "window_dressing_model": "247"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 75,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Office Room",
+        "min_area_m2": 10,
+        "max_area_m2": 20,
+        "id": 89,
+        "style_id": 75
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testing demo -7",
+    "user_style_id": null,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/testing_demo_-7/thumbnails/790033_20251219111646.png",
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "443",
+      "outer wall": "443",
+      "floor": "443",
+      "ceiling": "413",
+      "window_dressing_model": "248"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 74,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 10,
+        "max_area_m2": 20,
+        "id": 87,
+        "style_id": 74
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Testing demo-6",
+    "user_style_id": null,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/Testing_demo-6/thumbnails/790033_20251219100848.png",
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 73,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "test4",
+        "min_area_m2": 10,
+        "max_area_m2": 20,
+        "id": 82,
+        "style_id": 73
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testing demo -5",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 72,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 10,
+        "max_area_m2": 20,
+        "id": 81,
+        "style_id": 72
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "testing demo-4",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 71,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 400,
+        "max_area_m2": 1000,
+        "id": 80,
+        "style_id": 71
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "fewfwe",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": null,
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 70,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 22,
+        "max_area_m2": 222,
+        "id": 76,
+        "style_id": 70
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalist-95",
+    "user_style_id": null,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/minimalist-95/thumbnails/790033_20251218091131.png",
+    "description": null,
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 69,
+    "user_id": 6,
+    "rules": [],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalist-70",
+    "user_style_id": null,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/minimalist-70/thumbnails/790033_20251218072524.png",
+    "description": null,
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 68,
+    "user_id": 6,
+    "rules": [],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalist-60",
+    "user_style_id": null,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/minimalist-60/thumbnails/790033_20251218065002.png",
+    "description": "minimalist-51 has been added",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      2
+    ],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 67,
+    "user_id": 6,
+    "rules": [],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalist-52",
+    "user_style_id": null,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/minimalist-52/thumbnails/790033_20251218064153.png",
+    "description": null,
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 66,
+    "user_id": 6,
+    "rules": [],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalist-51",
+    "user_style_id": null,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/styles/styles/minimalist-51/thumbnails/790033_20251218063819.png",
+    "description": "minimalist-51 has been added",
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {},
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 65,
+    "user_id": 6,
+    "rules": [],
+    "pattern_rules": []
+  },
+  {
+    "name": "Demo 1",
+    "user_style_id": null,
+    "thumbnail_url": "https://your-storage.com/thumbnails/premium-modern-study.jpg",
+    "description": "A minimalist and functional workspace style",
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [
+      104
+    ],
+    "optional_assets": [
+      103,
+      36
+    ],
+    "texture_rules": {
+      "floor": "70",
+      "inner wall": "169"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 64,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 74,
+        "style_id": 64
+      },
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 75,
+        "style_id": 64
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Demo",
+    "user_style_id": null,
+    "thumbnail_url": "https://your-storage.com/thumbnails/modern-study-nook.jpg",
+    "description": "A minimalist and functional workspace style",
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [
+      104
+    ],
+    "optional_assets": [
+      103,
+      36
+    ],
+    "texture_rules": {
+      "floor": "70",
+      "inner wall": "169"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 63,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 72,
+        "style_id": 63
+      },
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 73,
+        "style_id": 63
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "country_cook",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      221,
+      186
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "626b70",
+      "outer wall": "9694a1",
+      "ceiling": "626b70",
+      "window_dressing_model": "Window",
+      "floor": "Staris_Wood"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 62,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 100,
+        "id": 71,
+        "style_id": 62
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalist-50",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "added",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      11,
+      1
+    ],
+    "optional_assets": [
+      2,
+      105
+    ],
+    "texture_rules": {
+      "inner wall": "Staris_Wood",
+      "outer wall": "Nordic_Photoframe",
+      "floor": "Staris_Wood",
+      "ceiling": "Staris_Wood",
+      "window_dressing_model": "Test1"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 61,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 100,
+        "max_area_m2": 200,
+        "id": 70,
+        "style_id": 61
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "sample123",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A minimalist and functional workspace style",
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [
+      104
+    ],
+    "optional_assets": [
+      103,
+      36
+    ],
+    "texture_rules": {
+      "floor": "70",
+      "inner wall": "169"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 60,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 68,
+        "style_id": 60
+      },
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 69,
+        "style_id": 60
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "sample12",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A minimalist and functional workspace style",
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [
+      104
+    ],
+    "optional_assets": [
+      103,
+      36
+    ],
+    "texture_rules": {
+      "floor": "70",
+      "inner wall": "169"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 59,
+    "user_id": 6,
+    "rules": [],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalist-30",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "added",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      11,
+      1
+    ],
+    "optional_assets": [
+      2,
+      105
+    ],
+    "texture_rules": {
+      "inner wall": "Staris_Wood",
+      "outer wall": "Nordic_Photoframe",
+      "floor": "Staris_Wood",
+      "ceiling": "Staris_Wood",
+      "window_dressing_model": "Test1"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 58,
+    "user_id": 6,
+    "rules": [],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalist-25",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "minimalist-25 has been edited",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      11,
+      1
+    ],
+    "optional_assets": [
+      2,
+      105
+    ],
+    "texture_rules": {
+      "inner wall": "Staris_Wood",
+      "outer wall": "Staris_Wood",
+      "floor": "Staris_Wood",
+      "ceiling": "Staris_Wood",
+      "window_dressing_model": "Country_Bedside_Table"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 57,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 10,
+        "max_area_m2": 20,
+        "id": 67,
+        "style_id": 57
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "sample-1",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A high-end modern workspace with premium furniture and textures",
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [
+      104,
+      103
+    ],
+    "optional_assets": [
+      36,
+      50,
+      102
+    ],
+    "texture_rules": {
+      "floor": "Oak Wood Floor",
+      "inner wall": "Premium Grey Plaster"
+    },
+    "is_public": true,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 56,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 66,
+        "style_id": 56
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalist-23",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "added",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      11,
+      1
+    ],
+    "optional_assets": [
+      2,
+      105
+    ],
+    "texture_rules": {
+      "inner wall": "Staris_Wood",
+      "outer wall": "Nordic_Photoframe",
+      "floor": "416",
+      "ceiling": "415",
+      "window_dressing_model": "Test1"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 55,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Deluxe Rooms",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 65,
+        "style_id": 55
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "sample",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "demo",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      11,
+      1
+    ],
+    "optional_assets": [
+      2,
+      105
+    ],
+    "texture_rules": {
+      "inner wall": "Staris_Wood",
+      "outer wall": "Nordic_Photoframe",
+      "floor": "416",
+      "ceiling": "415",
+      "window_dressing_model": "Test1"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 54,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Dormitory Rooms",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 64,
+        "style_id": 54
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Modern Study",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A high-end modern workspace with premium furniture and textures",
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [
+      104,
+      103
+    ],
+    "optional_assets": [
+      36,
+      50,
+      102
+    ],
+    "texture_rules": {
+      "floor": "Oak Wood Floor",
+      "inner wall": "Premium Grey Plaster"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 53,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 62,
+        "style_id": 53
+      },
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 63,
+        "style_id": 53
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Premium",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A high-end modern workspace with premium furniture and textures",
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [
+      104,
+      103
+    ],
+    "optional_assets": [
+      36,
+      50,
+      102
+    ],
+    "texture_rules": {
+      "floor": "Oak Wood Floor",
+      "inner wall": "Premium Grey Plaster"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 52,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 60,
+        "style_id": 52
+      },
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 61,
+        "style_id": 52
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Modern Study Noo123k",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A minimalist and functional workspace style",
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [
+      104
+    ],
+    "optional_assets": [
+      103,
+      36
+    ],
+    "texture_rules": {
+      "floor": "70",
+      "inner wall": "169"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 51,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 58,
+        "style_id": 51
+      },
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 59,
+        "style_id": 51
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalist-22",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      11,
+      2
+    ],
+    "optional_assets": [
+      105,
+      28
+    ],
+    "texture_rules": {
+      "inner wall": "#F000",
+      "outer wall": "#F000",
+      "floor": "#F000",
+      "ceiling": "#F000",
+      "window_dressing_model": "Steps"
+    },
+    "is_public": false,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 50,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Deluxe Rooms",
+        "min_area_m2": 100,
+        "max_area_m2": 200,
+        "id": 57,
+        "style_id": 50
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalist-20",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "minimalist-20 has been added",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      11,
+      1
+    ],
+    "optional_assets": [
+      2,
+      105
+    ],
+    "texture_rules": {
+      "inner wall": "Staris_Wood",
+      "outer wall": "Nordic_Photoframe",
+      "floor": "416",
+      "ceiling": "415",
+      "window_dressing_model": "Steps"
+    },
+    "is_public": true,
+    "shared_by": null,
+    "zone_preferences": {},
+    "id": 49,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Deluxe Rooms",
+        "min_area_m2": 100,
+        "max_area_m2": 200,
+        "id": 56,
+        "style_id": 49
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalistic_bathroom",
+    "user_style_id": 48,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/minimalistic_bathroom.webp",
+    "description": "minimalistic_bathroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      220,
+      182,
+      183,
+      219,
+      181,
+      218
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "40",
+      "outer wall": "#8c7764",
+      "ceiling": "#7a7874",
+      "floor": "360"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 48,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 2,
+        "max_area_m2": 55,
+        "id": 55,
+        "style_id": 48
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalistic_kitchen",
+    "user_style_id": 47,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/minimalistic_kitchen.webp",
+    "description": "minimalistic_kitchen",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      160,
+      42,
+      180
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "#a69f90",
+      "outer wall": "#827974",
+      "ceiling": "#857b6b",
+      "floor": "318"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 47,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 100,
+        "id": 54,
+        "style_id": 47
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "nordic_kitchen",
+    "user_style_id": 46,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/nordic_kitchen.webp",
+    "description": "nordic_kitchen",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      184,
+      165,
+      163,
+      162,
+      164,
+      166
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "#5f6769",
+      "outer wall": "#7686a3",
+      "ceiling": "#5f6769",
+      "floor": "416"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 46,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 100,
+        "id": 53,
+        "style_id": 46
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "modern_office",
+    "user_style_id": 45,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/modern_office.webp",
+    "description": "modern_office",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      216,
+      213,
+      212,
+      215,
+      214
+    ],
+    "optional_assets": [
+      156,
+      178
+    ],
+    "texture_rules": {
+      "inner wall": "#626b70",
+      "outer wall": "#9694a1",
+      "ceiling": "#626b70",
+      "floor": "407"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 45,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Office Room",
+        "min_area_m2": 10,
+        "max_area_m2": 100,
+        "id": 52,
+        "style_id": 45
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "country_kitchen",
+    "user_style_id": 44,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/country_kitchen.webp",
+    "description": "country_kitchen",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      187,
+      185,
+      186,
+      221
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "#626b70",
+      "outer wall": "#9694a1",
+      "ceiling": "#626b70",
+      "floor": "407"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 44,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 100,
+        "id": 51,
+        "style_id": 44
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "country_livingroom",
+    "user_style_id": 43,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/country_livingroom.webp",
+    "description": "country_livingroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      203,
+      209,
+      200,
+      217,
+      197,
+      204,
+      195,
+      192,
+      194,
+      193,
+      206,
+      205,
+      207
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "#5e5d50",
+      "outer wall": "#90a39c",
+      "ceiling": "#9c9492",
+      "floor": "408"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 43,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 50,
+        "style_id": 43
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "country_bathroom",
+    "user_style_id": 42,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/country_bathroom.webp",
+    "description": "country_bathroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      189,
+      190,
+      192,
+      188,
+      191,
+      210
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "#8d9494",
+      "outer wall": "#90a39c",
+      "ceiling": "#9c9492",
+      "floor": "403"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 42,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 2,
+        "max_area_m2": 55,
+        "id": 49,
+        "style_id": 42
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "country_bedroom",
+    "user_style_id": 41,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/country_bedroom.webp",
+    "description": "country_bedroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      211,
+      196,
+      201,
+      195,
+      199,
+      208,
+      200,
+      198,
+      207
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "#babab5",
+      "outer wall": "#c9c8bd",
+      "ceiling": "#babab5",
+      "floor": "403"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 41,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 48,
+        "style_id": 41
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "customized_minimalist_bedroom",
+    "user_style_id": 40,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/minimalistic_bedroom.webp",
+    "description": "minimalist_bedroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      125,
+      140
+    ],
+    "optional_assets": [
+      136,
+      1028,
+      133,
+      129,
+      126,
+      128,
+      127,
+      138,
+      152,
+      104,
+      103,
+      155,
+      158,
+      132,
+      159,
+      116,
+      95,
+      213,
+      47,
+      198,
+      14,
+      80,
+      131,
+      285
+    ],
+    "texture_rules": {
+      "inner wall": "#d9c8a6",
+      "outer wall": "#F8F1E1",
+      "floor": "298",
+      "ceiling": "#d9c8a6",
+      "door_model": "105",
+      "window_model": "135",
+      "window_dressing_model": "137"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 40,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 47,
+        "style_id": 40
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "nordic_bathroom",
+    "user_style_id": 39,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/nordic_bathroom.webp",
+    "description": "nordic_bathroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      172,
+      173,
+      171,
+      170
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "#706d68",
+      "outer wall": "#d9c8a6",
+      "ceiling": "#d9c8a6",
+      "floor": "22"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 39,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 2,
+        "max_area_m2": 55,
+        "id": 46,
+        "style_id": 39
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalistic_living",
+    "user_style_id": 38,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/minimalistic_livingroom.webp",
+    "description": "minimalistic_living",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      152,
+      153,
+      157,
+      155,
+      159
+    ],
+    "optional_assets": [
+      156,
+      178,
+      158,
+      154
+    ],
+    "texture_rules": {
+      "inner wall": "#d9c8a6",
+      "outer wall": "#F8F1E1",
+      "floor": "318",
+      "ceiling": "#d9c8a6",
+      "door_model": "105",
+      "window_model": "135",
+      "window_dressing_model": "137"
+    },
+    "is_public": true,
+    "shared_by": "zlendorealty@gmail.com",
+    "zone_preferences": {},
+    "id": 38,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 45,
+        "style_id": 38
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalist_bedroom",
+    "user_style_id": 37,
+    "thumbnail_url": null,
+    "description": "minimalist_bedroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      125,
+      140
+    ],
+    "optional_assets": [
+      136,
+      132,
+      1028,
+      133,
+      129,
+      126,
+      128,
+      127,
+      138
+    ],
+    "texture_rules": {
+      "inner wall": "#d9c8a6",
+      "outer wall": "#F8F1E1",
+      "floor": "298",
+      "ceiling": "#d9c8a6",
+      "window_dressing_model": "Minimalist_Curtains"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 37,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 44,
+        "style_id": 37
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "nordic_bedroom1",
+    "user_style_id": 36,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/Nordic_bedroom.webp",
+    "description": "nordic_bedroom1",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      124,
+      123,
+      122
+    ],
+    "optional_assets": [
+      114,
+      118,
+      116,
+      120,
+      121,
+      144
+    ],
+    "texture_rules": {
+      "inner wall": "297",
+      "outer wall": "74",
+      "floor": "298",
+      "ceiling": "297",
+      "door_model": "105",
+      "window_model": "115",
+      "window_dressing_model": "119"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 36,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 43,
+        "style_id": 36
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "classic_livingroom",
+    "user_style_id": 35,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/classic_livingroom.webp",
+    "description": "classic_livingroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      88,
+      89,
+      86,
+      91
+    ],
+    "optional_assets": [
+      90,
+      93,
+      87,
+      94,
+      92
+    ],
+    "texture_rules": {
+      "inner wall": "254",
+      "outer wall": "74",
+      "floor": "256",
+      "ceiling": "254"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 35,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 42,
+        "style_id": 35
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "classic_bedroom",
+    "user_style_id": 34,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/classic_bedroom.webp",
+    "description": "classic_bedroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      85,
+      77,
+      79,
+      84
+    ],
+    "optional_assets": [
+      81,
+      95,
+      80,
+      83,
+      78,
+      82
+    ],
+    "texture_rules": {
+      "inner wall": "269",
+      "outer wall": "67",
+      "floor": "255",
+      "ceiling": "269"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 34,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 41,
+        "style_id": 34
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "classic_kitchen",
+    "user_style_id": 33,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/classic_kitchen.webp",
+    "description": "classic_kitchen",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      69,
+      68,
+      67
+    ],
+    "optional_assets": [
+      70
+    ],
+    "texture_rules": {
+      "inner wall": "254",
+      "outer wall": "74",
+      "floor": "236",
+      "ceiling": "254"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 33,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 100,
+        "id": 40,
+        "style_id": 33
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "classic_bathroom",
+    "user_style_id": 32,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/classic_bathroom.webp",
+    "description": "classic_bathroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      71,
+      167,
+      73,
+      72
+    ],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "254",
+      "outer wall": "66",
+      "floor": "235",
+      "ceiling": "254"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 32,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 2,
+        "max_area_m2": 55,
+        "id": 39,
+        "style_id": 32
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "modern_livingroom1",
+    "user_style_id": 31,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/modern_livingroom.webp",
+    "description": "modern_livingroom1",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      57,
+      44,
+      49,
+      47,
+      56,
+      63
+    ],
+    "optional_assets": [
+      40,
+      50,
+      64,
+      61,
+      60,
+      41,
+      53
+    ],
+    "texture_rules": {
+      "inner wall": "194",
+      "outer wall": "64",
+      "floor": "201",
+      "ceiling": "201"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 31,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 38,
+        "style_id": 31
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "modern_kitchen",
+    "user_style_id": null,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/modern_kitchen.webp",
+    "description": "modern_kitchen",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      48,
+      42
+    ],
+    "optional_assets": [
+      51,
+      43
+    ],
+    "texture_rules": {
+      "inner wall": "194",
+      "outer wall": "64",
+      "floor": "192",
+      "ceiling": "194"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 30,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 100,
+        "id": 37,
+        "style_id": 30
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "modern_bathroom",
+    "user_style_id": 29,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/modern_bathroom.webp",
+    "description": "modern_bathroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      58,
+      54,
+      52,
+      59
+    ],
+    "optional_assets": [
+      46,
+      55
+    ],
+    "texture_rules": {
+      "inner wall": "194",
+      "outer wall": "74",
+      "floor": "190",
+      "ceiling": "194"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 29,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 2,
+        "max_area_m2": 55,
+        "id": 127,
+        "style_id": 29
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "modern_bedroom",
+    "user_style_id": 28,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/modern_bedroom.webp",
+    "description": "modern bedroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      37,
+      44,
+      49
+    ],
+    "optional_assets": [
+      40,
+      41,
+      47,
+      38,
+      39,
+      50,
+      45
+    ],
+    "texture_rules": {
+      "inner wall": "169",
+      "outer wall": "74",
+      "floor": "170",
+      "ceiling": "171"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 28,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 126,
+        "style_id": 28
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "nordic_livingroom1",
+    "user_style_id": 27,
+    "thumbnail_url": "https://zrealtystoragedev.blob.core.windows.net/3dassets/Thumbnails/Nordic_livingroom.webp",
+    "description": "nodic style living room",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      146,
+      149,
+      145,
+      134,
+      139,
+      144,
+      142,
+      141
+    ],
+    "optional_assets": [
+      148,
+      147,
+      150,
+      123
+    ],
+    "texture_rules": {
+      "inner wall": "#838383",
+      "outer wall": "#838383",
+      "floor": "317",
+      "ceiling": "#838383",
+      "window_dressing_model": "119"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 27,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 125,
+        "style_id": 27
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Cozy Reading Nook",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A comfortable and inviting corner perfect for relaxation and reading, featuring a plush armchair, ample lighting, and accessible storage.",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      13
+    ],
+    "optional_assets": [
+      27,
+      25,
+      23,
+      36
+    ],
+    "texture_rules": {
+      "outer wall": "#8B4513",
+      "floor": "170",
+      "ceiling": "#F5F5F5"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 18,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 25,
+        "style_id": 18
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Luxurious Master Bathroom",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A spa-like retreat featuring high-end marble, a freestanding bathtub, and modern fixtures for ultimate relaxation.",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [
+      58,
+      52,
+      46
+    ],
+    "texture_rules": {
+      "wall": "87",
+      "floor": "235"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 17,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 2,
+        "max_area_m2": 55,
+        "id": 24,
+        "style_id": 17
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalist-21",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      11,
+      2
+    ],
+    "optional_assets": [
+      105,
+      28
+    ],
+    "texture_rules": {
+      "inner wall": "#F000",
+      "outer wall": "#F000",
+      "floor": "#F000",
+      "ceiling": "#F000",
+      "window_dressing_model": "Steps"
+    },
+    "is_public": false,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 16,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 100,
+        "id": 23,
+        "style_id": 16
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "minimalist-19",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "minimalist-20 has been added",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      11,
+      1
+    ],
+    "optional_assets": [
+      2,
+      105
+    ],
+    "texture_rules": {
+      "inner wall": "Staris_Wood",
+      "outer wall": "Nordic_Photoframe",
+      "floor": "416",
+      "ceiling": "415",
+      "window_dressing_model": "Steps"
+    },
+    "is_public": false,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 15,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 22,
+        "style_id": 15
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Modern Minimalist Bedroom1",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A clean and serene bedroom style focusing on functionality and uncluttered spaces. It uses a neutral color palette with natural wood tones.",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      37
+    ],
+    "optional_assets": [
+      39,
+      41,
+      40,
+      47,
+      62,
+      50,
+      38
+    ],
+    "texture_rules": {
+      "wall": "52",
+      "floor": "202"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 14,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 21,
+        "style_id": 14
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Tranquil Bathroom Spa",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "Adds essential, modern fixtures to create a clean and tranquil spa-like bathroom. Does not modify existing textures.",
+    "assets_only": true,
+    "textures_only": false,
+    "mandatory_assets": [
+      46
+    ],
+    "optional_assets": [
+      58,
+      52
+    ],
+    "texture_rules": {},
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 13,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 2,
+        "max_area_m2": 55,
+        "id": 20,
+        "style_id": 13
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Luxe Entertainment Lounge",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A sophisticated lounge for entertainment, featuring a large sofa facing a wall-mounted TV and elegant lighting.",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [
+      102,
+      49,
+      47,
+      101
+    ],
+    "texture_rules": {},
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 12,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 19,
+        "style_id": 12
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Executive Home Office",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A sophisticated and functional office style, featuring a main desk area and a comfortable reading nook.",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      104,
+      103
+    ],
+    "optional_assets": [
+      99,
+      36,
+      50
+    ],
+    "texture_rules": {},
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 11,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 17,
+        "style_id": 11
+      },
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 18,
+        "style_id": 11
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Modern Study Nook",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A minimalist and functional workspace style with a wall-mounted desk.",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      104
+    ],
+    "optional_assets": [
+      103,
+      36
+    ],
+    "texture_rules": {
+      "inner wall": "169",
+      "outer wall": "Rough Grey Brick Wall",
+      "floor": "70",
+      "ceiling": "67"
+    },
+    "is_public": true,
+    "shared_by": "sheikmohammed480@gmail.com",
+    "zone_preferences": {},
+    "id": 10,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 15,
+        "style_id": 10
+      },
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 16,
+        "style_id": 10
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "classic bathroom",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A cool and pleasant odourful restroom",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      58
+    ],
+    "optional_assets": [
+      52,
+      46,
+      10
+    ],
+    "texture_rules": {
+      "inner wall": "21",
+      "outer wall": "26",
+      "floor": "28",
+      "ceiling": "114"
+    },
+    "is_public": true,
+    "shared_by": "ADMIN",
+    "zone_preferences": {},
+    "id": 7,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 2,
+        "max_area_m2": 55,
+        "id": 10,
+        "style_id": 7
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Eclectic Charm",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A vibrant and personalized style mixing modern assets with classic textures for various room types.",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [
+      99,
+      104,
+      102,
+      101,
+      100,
+      68
+    ],
+    "texture_rules": {
+      "inner wall": "63",
+      "outer wall": "Weathered Orange Brick Wall",
+      "floor": "84",
+      "ceiling": "67"
+    },
+    "is_public": true,
+    "shared_by": "ADMIN",
+    "zone_preferences": {},
+    "id": 6,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 6,
+        "style_id": 6
+      },
+      {
+        "room_type": "Living Room",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 7,
+        "style_id": 6
+      },
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 100,
+        "id": 8,
+        "style_id": 6
+      },
+      {
+        "room_type": "Bathroom",
+        "min_area_m2": 2,
+        "max_area_m2": 55,
+        "id": 9,
+        "style_id": 6
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Modern Kitchen & Dining",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A sleek and functional style for modern, open-plan kitchen and dining spaces.",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      42,
+      5,
+      10
+    ],
+    "optional_assets": [
+      43,
+      51,
+      48,
+      32,
+      30
+    ],
+    "texture_rules": {
+      "inner wall": "67",
+      "outer wall": "94",
+      "floor": "27",
+      "ceiling": "67"
+    },
+    "is_public": true,
+    "shared_by": "ADMIN",
+    "zone_preferences": {},
+    "id": 5,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Kitchen",
+        "min_area_m2": 4,
+        "max_area_m2": 100,
+        "id": 5,
+        "style_id": 5
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Luxe Hotel",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "Applies high-end marble and polished textures to surfaces for a luxurious feel. Does not change furniture.",
+    "assets_only": false,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [],
+    "texture_rules": {
+      "inner wall": "21",
+      "outer wall": "26",
+      "floor": "28",
+      "ceiling": "114"
+    },
+    "is_public": true,
+    "shared_by": "ADMIN",
+    "zone_preferences": {},
+    "id": 4,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Hotel",
+        "min_area_m2": 10,
+        "max_area_m2": 100,
+        "id": 4,
+        "style_id": 4
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Scandinavian Minimalist",
+    "user_style_id": 3,
+    "thumbnail_url": null,
+    "description": "Clean lines, light woods, and neutral tones for a bright and airy feel.",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [],
+    "optional_assets": [
+      38,
+      41,
+      39,
+      49,
+      47,
+      44,
+      46,
+      40,
+      62,
+      21,
+      36
+    ],
+    "texture_rules": {
+      "inner wall": "67",
+      "outer wall": "Light Beige Brick Wall",
+      "floor": "104",
+      "ceiling": "67",
+      "window_dressing_model": "Nordic_Curtain"
+    },
+    "is_public": true,
+    "shared_by": "ADMIN",
+    "zone_preferences": {},
+    "id": 3,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 3,
+        "style_id": 3
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Industrial Loft",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A style featuring raw materials like exposed brick, dark metal, and leather.",
+    "assets_only": true,
+    "textures_only": true,
+    "mandatory_assets": [
+      57,
+      56,
+      49
+    ],
+    "optional_assets": [
+      47,
+      61,
+      40,
+      44,
+      46,
+      23,
+      53,
+      102,
+      38,
+      41,
+      62,
+      64,
+      21,
+      36,
+      60
+    ],
+    "texture_rules": {
+      "inner wall": "68",
+      "outer wall": "81",
+      "floor": "23",
+      "ceiling": "171",
+      "window_dressing_model": "Nordic_Curtain"
+    },
+    "is_public": true,
+    "shared_by": "ADMIN",
+    "zone_preferences": {},
+    "id": 2,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Livingroom",
+        "min_area_m2": 5,
+        "max_area_m2": 100,
+        "id": 2,
+        "style_id": 2
+      }
+    ],
+    "pattern_rules": []
+  },
+  {
+    "name": "Premium Modern Study",
+    "user_style_id": null,
+    "thumbnail_url": null,
+    "description": "A high-end modern workspace with premium furniture and textures",
+    "assets_only": false,
+    "textures_only": false,
+    "mandatory_assets": [
+      104,
+      103
+    ],
+    "optional_assets": [
+      36,
+      50,
+      102
+    ],
+    "texture_rules": {
+      "floor": "Oak Wood Floor",
+      "inner wall": "Premium Grey Plaster"
+    },
+    "is_public": true,
+    "shared_by": "ADMIN",
+    "zone_preferences": {},
+    "id": 1,
+    "user_id": 6,
+    "rules": [
+      {
+        "room_type": "Bedroom",
+        "min_area_m2": 8,
+        "max_area_m2": 100,
+        "id": 1,
+        "style_id": 1
+      }
+    ],
+    "pattern_rules": []
+  }
+]

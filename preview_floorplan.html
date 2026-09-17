@@ -1,0 +1,2983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Wizard: 1bhk_south_square_853.2sqft.json</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-base: #090d16;
+            --bg-card: #0f172a;
+            --bg-card-hover: #1e293b;
+            --border: rgba(255, 255, 255, 0.08);
+            --primary: #4f46e5;
+            --primary-light: #818cf8;
+            --primary-glow: rgba(99, 102, 241, 0.25);
+            --accent: #06b6d4;
+            --amber: #f59e0b;
+            --success: #10b981;
+            --danger: #ef4444;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-code: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg-base);
+            color: var(--text);
+            font-family: var(--font-main);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Header */
+        header {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+        }
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            box-shadow: 0 0 16px var(--primary-glow);
+        }
+        .brand-title {
+            font-size: 1.05rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff, #cbd5e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .brand-subtitle {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+        }
+
+        .header-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .metric-badge {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border);
+            padding: 0.35rem 0.75rem;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .metric-badge strong {
+            color: #ffffff;
+            font-family: var(--font-code);
+        }
+
+        /* Main Workspace */
+        .workspace {
+            display: flex;
+            flex: 1;
+            height: calc(100vh - 65px);
+            overflow: hidden;
+        }
+
+        /* Left / Center: Interactive Canvas */
+        .canvas-container {
+            flex: 1;
+            position: relative;
+            background: radial-gradient(circle at center, #131d33 0%, #090d16 100%);
+            overflow: hidden;
+            user-select: none;
+        }
+
+        svg.floorplan-viewport {
+            width: 100%;
+            height: 100%;
+            cursor: grab;
+        }
+        svg.floorplan-viewport:active {
+            cursor: grabbing;
+        }
+
+        /* Floating Toolbar (Controls & Toggles) */
+        .floating-toolbar {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+            z-index: 20;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+        }
+
+        .toolbar-group {
+            display: flex;
+            gap: 0.4rem;
+        }
+
+        .tool-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 0.4rem 0.65rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            transition: all 0.2s;
+        }
+        .tool-btn:hover {
+            background: rgba(255, 255, 255, 0.12);
+            color: white;
+        }
+        .tool-btn.active {
+            background: rgba(99, 102, 241, 0.3);
+            border-color: var(--primary);
+            color: #ffffff;
+        }
+
+        /* Zoom Controls */
+        .zoom-controls {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 20;
+        }
+        .zoom-btn {
+            background: transparent;
+            border: none;
+            color: white;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background 0.2s;
+        }
+        .zoom-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .zoom-btn:not(:last-child) {
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Compass */
+        .compass-rose {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 20;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        /* Right Panel: Inspector & Data Tree */
+        .inspector-panel {
+            width: 400px;
+            background: var(--bg-card);
+            border-left: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            z-index: 50;
+        }
+
+        .tabs-nav {
+            display: flex;
+            border-bottom: 1px solid var(--border);
+            background: rgba(0, 0, 0, 0.2);
+        }
+        .tab-btn {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            padding: 0.85rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+        .tab-btn.active {
+            color: var(--text);
+            background: rgba(255, 255, 255, 0.03);
+        }
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--primary);
+        }
+
+        .tab-content {
+            flex: 1;
+            padding: 1.25rem;
+            overflow-y: auto;
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .room-item-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .room-item-card:hover, .room-item-card.selected {
+            border-color: var(--primary-light);
+            background: rgba(99, 102, 241, 0.08);
+        }
+        .room-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+        .room-area-tag {
+            font-family: var(--font-code);
+            font-size: 0.72rem;
+            background: rgba(6, 182, 212, 0.15);
+            color: var(--accent);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        .json-pre {
+            background: #06090e;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: var(--font-code);
+            font-size: 0.72rem;
+            line-height: 1.45;
+            color: #38bdf8;
+            overflow: auto;
+            max-height: calc(100vh - 160px);
+            white-space: pre-wrap;
+        }
+
+        /* Drag and Drop Zone Overlay */
+        .dropzone-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            border: 3px dashed var(--primary);
+        }
+        .dropzone-overlay.active {
+            display: flex;
+        }
+        .dropzone-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <div class="brand-icon">🏠</div>
+            <div>
+                <div class="brand-title">Smart Wizard: 1bhk_south_square_853.2sqft.json</div>
+                <div class="brand-subtitle">Smart Wizard CAD Floorplan Geometry & Element Inspector</div>
+            </div>
+        </div>
+
+        <div class="header-meta">
+            <div class="metric-badge">
+                <span>📐 Total Area:</span>
+                <strong><span id="metaAreaM2">--</span> m² (<span id="metaAreaSqft">--</span> sqft)</strong>
+            </div>
+            <div class="metric-badge">
+                <span>Unit:</span>
+                <strong><span id="metaUnit">--</span></strong>
+            </div>
+            <label class="tool-btn" style="cursor: pointer;">
+                <span>📂 Open JSON</span>
+                <input type="file" id="fileInput" accept=".json" style="display: none;" onchange="handleFileSelect(event)">
+            </label>
+        </div>
+    </header>
+
+    <div class="workspace">
+        
+        <!-- Floorplan Canvas Viewport -->
+        <div class="canvas-container" id="canvasBox">
+            
+            <!-- Floating Toggles -->
+            <div class="floating-toolbar">
+                <div class="toolbar-group">
+                    <button class="tool-btn active" id="btnTogRooms" onclick="toggleVisibility('rooms')">🟦 Rooms</button>
+                    <button class="tool-btn active" id="btnTogWalls" onclick="toggleVisibility('walls')">🧱 Walls</button>
+                    <button class="tool-btn active" id="btnTogDoors" onclick="toggleVisibility('doors')">🚪 Doors (<span id="cntDoors">0</span>)</button>
+                    <button class="tool-btn active" id="btnTogWindows" onclick="toggleVisibility('windows')">🪟 Windows (<span id="cntWindows">0</span>)</button>
+                    <button class="tool-btn" id="btnTogDims" onclick="toggleVisibility('dims')">📏 Dimensions</button>
+                </div>
+            </div>
+
+            <!-- Compass Rose -->
+            <div class="compass-rose" id="compassElem" title="North Orientation">
+                <span style="color: #ef4444; font-weight: 800; font-size: 1.1rem;">N ↑</span>
+            </div>
+
+            <!-- Zoom & Pan Controls -->
+            <div class="zoom-controls">
+                <button class="zoom-btn" onclick="zoomIn()" title="Zoom In">+</button>
+                <button class="zoom-btn" onclick="zoomOut()" title="Zoom Out">−</button>
+                <button class="zoom-btn" onclick="resetView()" title="Fit to Center">⛶</button>
+            </div>
+
+            <!-- SVG Rendering Surface -->
+            <svg id="svgViewport" class="floorplan-viewport">
+                <g id="transformGroup">
+                    <g id="wallsGroup"></g>
+                    <g id="roomsGroup"></g>
+                    <g id="openingsGroup"></g>
+                    <g id="dimsGroup" style="display: none;"></g>
+                </g>
+            </svg>
+
+            <!-- Dropzone Overlay -->
+            <div class="dropzone-overlay" id="dropOverlay">
+                <div class="dropzone-text">
+                    📥 Drop Smart Wizard JSON Floorplan Here to Visualize
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side Panel -->
+        <div class="inspector-panel">
+            <div class="tabs-nav">
+                <button class="tab-btn active" onclick="switchInspectorTab('roomsTab', this)">🏠 Rooms (<span id="cntRooms">0</span>)</button>
+                <button class="tab-btn" onclick="switchInspectorTab('jsonTab', this)">📜 Raw JSON</button>
+            </div>
+
+            <!-- Tab 1: Rooms Inspector -->
+            <div class="tab-content" id="roomsTab">
+                <div class="section-title">
+                    <span>Floorplan Rooms</span>
+                    <span style="font-size: 0.72rem; color: var(--accent);">Click to Highlight</span>
+                </div>
+                <div id="roomsListContainer">
+                    <!-- Populated dynamically -->
+                </div>
+            </div>
+
+            <!-- Tab 2: Raw JSON Tree -->
+            <div class="tab-content" id="jsonTab" style="display: none;">
+                <pre class="json-pre" id="jsonTreeBox"></pre>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Initial Parsed Data embedded from Python
+        let floorplanData = {
+  "unit": "cm",
+  "direction": "South",
+  "direction_angle": 0,
+  "total_area_m2": 79.26,
+  "total_area_sqft": 853.1,
+  "rooms_count": 4,
+  "walls_count": 13,
+  "doors_count": 3,
+  "windows_count": 7,
+  "vertices_count": 10,
+  "rooms": [
+    {
+      "id": "a-1770955324792-8uewx7i2",
+      "name": "Bedroom",
+      "area_m2": 22.69,
+      "area_sqft": 244.2,
+      "vertices_count": 5,
+      "polygon": [
+        {
+          "id": "v-1770955317822-0",
+          "x": -397.0,
+          "y": -449.0
+        },
+        {
+          "id": "v-1770955317822-1",
+          "x": 55.0,
+          "y": -449.0
+        },
+        {
+          "id": "v-1770955339733-1770955339733",
+          "x": 55.0,
+          "y": -71.0
+        },
+        {
+          "id": "v-1770955319857-1",
+          "x": 55.0,
+          "y": 53.0
+        },
+        {
+          "id": "v-1770955323002-1",
+          "x": -397.0,
+          "y": 53.0
+        }
+      ],
+      "center": {
+        "x": -125.8,
+        "y": -172.6
+      }
+    },
+    {
+      "id": "a-1770955339845-sep4p0q8",
+      "name": "Toilet",
+      "area_m2": 11.34,
+      "area_sqft": 122.1,
+      "vertices_count": 4,
+      "polygon": [
+        {
+          "id": "v-1770955337614-1",
+          "x": 355.0,
+          "y": -71.0
+        },
+        {
+          "id": "v-1770955334815-1",
+          "x": 355.0,
+          "y": -449.0
+        },
+        {
+          "id": "v-1770955317822-1",
+          "x": 55.0,
+          "y": -449.0
+        },
+        {
+          "id": "v-1770955339733-1770955339733",
+          "x": 55.0,
+          "y": -71.0
+        }
+      ],
+      "center": {
+        "x": 205.0,
+        "y": -260.0
+      }
+    },
+    {
+      "id": "a-1770955354118-ko2gu9tn",
+      "name": "Living Room",
+      "area_m2": 24.95,
+      "area_sqft": 268.6,
+      "vertices_count": 4,
+      "polygon": [
+        {
+          "id": "v-1770955351898-1",
+          "x": 55.0,
+          "y": 605.0
+        },
+        {
+          "id": "v-1770955349563-1",
+          "x": -397.0,
+          "y": 605.0
+        },
+        {
+          "id": "v-1770955323002-1",
+          "x": -397.0,
+          "y": 53.0
+        },
+        {
+          "id": "v-1770955319857-1",
+          "x": 55.0,
+          "y": 53.0
+        }
+      ],
+      "center": {
+        "x": -171.0,
+        "y": 329.0
+      }
+    },
+    {
+      "id": "a-1770955365279-354luvc8",
+      "name": "Kitchen",
+      "area_m2": 20.28,
+      "area_sqft": 218.3,
+      "vertices_count": 5,
+      "polygon": [
+        {
+          "id": "v-1770955363056-1",
+          "x": 355.0,
+          "y": 605.0
+        },
+        {
+          "id": "v-1770955337614-1",
+          "x": 355.0,
+          "y": -71.0
+        },
+        {
+          "id": "v-1770955339733-1770955339733",
+          "x": 55.0,
+          "y": -71.0
+        },
+        {
+          "id": "v-1770955319857-1",
+          "x": 55.0,
+          "y": 53.0
+        },
+        {
+          "id": "v-1770955351898-1",
+          "x": 55.0,
+          "y": 605.0
+        }
+      ],
+      "center": {
+        "x": 175.0,
+        "y": 224.2
+      }
+    }
+  ],
+  "walls": [
+    {
+      "id": "l-1770955317821-cpucm0kw",
+      "v0": {
+        "id": "v-1770955317822-0",
+        "x": -397.0,
+        "y": -449.0
+      },
+      "v1": {
+        "id": "v-1770955317822-1",
+        "x": 55.0,
+        "y": -449.0
+      },
+      "x1": -397.0,
+      "y1": -449.0,
+      "x2": 55.0,
+      "y2": -449.0,
+      "length_cm": 452.0,
+      "length_m": 4.52,
+      "thickness_cm": 22.9,
+      "visible": true
+    },
+    {
+      "id": "l-1770955322999-v258fb0v",
+      "v0": {
+        "id": "v-1770955319857-1",
+        "x": 55.0,
+        "y": 53.0
+      },
+      "v1": {
+        "id": "v-1770955323002-1",
+        "x": -397.0,
+        "y": 53.0
+      },
+      "x1": 55.0,
+      "y1": 53.0,
+      "x2": -397.0,
+      "y2": 53.0,
+      "length_cm": 452.0,
+      "length_m": 4.52,
+      "thickness_cm": 22.9,
+      "visible": true
+    },
+    {
+      "id": "l-1770955324788-kqqaov3y",
+      "v0": {
+        "id": "v-1770955323002-1",
+        "x": -397.0,
+        "y": 53.0
+      },
+      "v1": {
+        "id": "v-1770955317822-0",
+        "x": -397.0,
+        "y": -449.0
+      },
+      "x1": -397.0,
+      "y1": 53.0,
+      "x2": -397.0,
+      "y2": -449.0,
+      "length_cm": 502.0,
+      "length_m": 5.02,
+      "thickness_cm": 22.9,
+      "visible": true
+    },
+    {
+      "id": "l-1770955334813-vvcf4e6n",
+      "v0": {
+        "id": "v-1770955317822-1",
+        "x": 55.0,
+        "y": -449.0
+      },
+      "v1": {
+        "id": "v-1770955334815-1",
+        "x": 355.0,
+        "y": -449.0
+      },
+      "x1": 55.0,
+      "y1": -449.0,
+      "x2": 355.0,
+      "y2": -449.0,
+      "length_cm": 300.0,
+      "length_m": 3.0,
+      "thickness_cm": 22.9,
+      "visible": true
+    },
+    {
+      "id": "l-1770955337612-o1ln1top",
+      "v0": {
+        "id": "v-1770955334815-1",
+        "x": 355.0,
+        "y": -449.0
+      },
+      "v1": {
+        "id": "v-1770955337614-1",
+        "x": 355.0,
+        "y": -71.0
+      },
+      "x1": 355.0,
+      "y1": -449.0,
+      "x2": 355.0,
+      "y2": -71.0,
+      "length_cm": 378.0,
+      "length_m": 3.78,
+      "thickness_cm": 22.9,
+      "visible": true
+    },
+    {
+      "id": "l-1770955339733-1770955339733",
+      "v0": {
+        "id": "v-1770955317822-1",
+        "x": 55.0,
+        "y": -449.0
+      },
+      "v1": {
+        "id": "v-1770955339733-1770955339733",
+        "x": 55.0,
+        "y": -71.0
+      },
+      "x1": 55.0,
+      "y1": -449.0,
+      "x2": 55.0,
+      "y2": -71.0,
+      "length_cm": 378.0,
+      "length_m": 3.78,
+      "thickness_cm": 22.9,
+      "visible": true
+    },
+    {
+      "id": "l-1770955339733-1770955339734",
+      "v0": {
+        "id": "v-1770955339733-1770955339733",
+        "x": 55.0,
+        "y": -71.0
+      },
+      "v1": {
+        "id": "v-1770955319857-1",
+        "x": 55.0,
+        "y": 53.0
+      },
+      "x1": 55.0,
+      "y1": -71.0,
+      "x2": 55.0,
+      "y2": 53.0,
+      "length_cm": 124.0,
+      "length_m": 1.24,
+      "thickness_cm": 22.9,
+      "visible": true
+    },
+    {
+      "id": "l-1770955339731-n9667xxv",
+      "v0": {
+        "id": "v-1770955337614-1",
+        "x": 355.0,
+        "y": -71.0
+      },
+      "v1": {
+        "id": "v-1770955339733-1770955339733",
+        "x": 55.0,
+        "y": -71.0
+      },
+      "x1": 355.0,
+      "y1": -71.0,
+      "x2": 55.0,
+      "y2": -71.0,
+      "length_cm": 300.0,
+      "length_m": 3.0,
+      "thickness_cm": 22.9,
+      "visible": true
+    },
+    {
+      "id": "l-1770955349562-yg5bn603",
+      "v0": {
+        "id": "v-1770955323002-1",
+        "x": -397.0,
+        "y": 53.0
+      },
+      "v1": {
+        "id": "v-1770955349563-1",
+        "x": -397.0,
+        "y": 605.0
+      },
+      "x1": -397.0,
+      "y1": 53.0,
+      "x2": -397.0,
+      "y2": 605.0,
+      "length_cm": 552.0,
+      "length_m": 5.52,
+      "thickness_cm": 22.9,
+      "visible": true
+    },
+    {
+      "id": "l-1770955351896-ghieunlw",
+      "v0": {
+        "id": "v-1770955349563-1",
+        "x": -397.0,
+        "y": 605.0
+      },
+      "v1": {
+        "id": "v-1770955351898-1",
+        "x": 55.0,
+        "y": 605.0
+      },
+      "x1": -397.0,
+      "y1": 605.0,
+      "x2": 55.0,
+      "y2": 605.0,
+      "length_cm": 452.0,
+      "length_m": 4.52,
+      "thickness_cm": 22.9,
+      "visible": true
+    },
+    {
+      "id": "l-1770955353978-dkaguayl",
+      "v0": {
+        "id": "v-1770955351898-1",
+        "x": 55.0,
+        "y": 605.0
+      },
+      "v1": {
+        "id": "v-1770955319857-1",
+        "x": 55.0,
+        "y": 53.0
+      },
+      "x1": 55.0,
+      "y1": 605.0,
+      "x2": 55.0,
+      "y2": 53.0,
+      "length_cm": 552.0,
+      "length_m": 5.52,
+      "thickness_cm": 22.9,
+      "visible": false
+    },
+    {
+      "id": "l-1770955363054-ugrb7ywo",
+      "v0": {
+        "id": "v-1770955337614-1",
+        "x": 355.0,
+        "y": -71.0
+      },
+      "v1": {
+        "id": "v-1770955363056-1",
+        "x": 355.0,
+        "y": 605.0
+      },
+      "x1": 355.0,
+      "y1": -71.0,
+      "x2": 355.0,
+      "y2": 605.0,
+      "length_cm": 676.0,
+      "length_m": 6.76,
+      "thickness_cm": 22.9,
+      "visible": true
+    },
+    {
+      "id": "l-1770955365153-sq5zidh9",
+      "v0": {
+        "id": "v-1770955363056-1",
+        "x": 355.0,
+        "y": 605.0
+      },
+      "v1": {
+        "id": "v-1770955351898-1",
+        "x": 55.0,
+        "y": 605.0
+      },
+      "x1": 355.0,
+      "y1": 605.0,
+      "x2": 55.0,
+      "y2": 605.0,
+      "length_cm": 300.0,
+      "length_m": 3.0,
+      "thickness_cm": 22.9,
+      "visible": true
+    }
+  ],
+  "openings": [
+    {
+      "id": "h-1770955386664-40n58pqa",
+      "name": "Single Door",
+      "type": "door",
+      "width": 81.3,
+      "cx": -29.0,
+      "cy": 605.0,
+      "p0": {
+        "x": -69.7,
+        "y": 605.0
+      },
+      "p1": {
+        "x": 11.6,
+        "y": 605.0
+      },
+      "leaf": {
+        "x": -69.7,
+        "y": 686.3
+      },
+      "line_id": "l-1770955351896-ghieunlw"
+    },
+    {
+      "id": "h-1770955397447-mkamxgmw",
+      "name": "Single Door",
+      "type": "door",
+      "width": 81.3,
+      "cx": -17.0,
+      "cy": 53.0,
+      "p0": {
+        "x": 23.6,
+        "y": 53.0
+      },
+      "p1": {
+        "x": -57.6,
+        "y": 53.0
+      },
+      "leaf": {
+        "x": 23.6,
+        "y": -28.3
+      },
+      "line_id": "l-1770955322999-v258fb0v"
+    },
+    {
+      "id": "h-1770955406537-081f5rzf",
+      "name": "Single Door",
+      "type": "door",
+      "width": 81.3,
+      "cx": 281.0,
+      "cy": -71.0,
+      "p0": {
+        "x": 321.6,
+        "y": -71.0
+      },
+      "p1": {
+        "x": 240.3,
+        "y": -71.0
+      },
+      "leaf": {
+        "x": 321.6,
+        "y": -152.3
+      },
+      "line_id": "l-1770955339731-n9667xxv"
+    },
+    {
+      "id": "h-1770955419858-zf7n4xx9",
+      "name": "Single Window",
+      "type": "window",
+      "width": 91.4,
+      "cx": 355.0,
+      "cy": 249.9,
+      "p0": {
+        "x": 355.0,
+        "y": 204.2
+      },
+      "p1": {
+        "x": 355.0,
+        "y": 295.6
+      },
+      "leaf": {
+        "x": 263.6,
+        "y": 204.2
+      },
+      "line_id": "l-1770955363054-ugrb7ywo"
+    },
+    {
+      "id": "h-1770955426589-21kscflt",
+      "name": "Single Window",
+      "type": "window",
+      "width": 91.4,
+      "cx": 244.8,
+      "cy": 605.0,
+      "p0": {
+        "x": 290.5,
+        "y": 605.0
+      },
+      "p1": {
+        "x": 199.1,
+        "y": 605.0
+      },
+      "leaf": {
+        "x": 290.5,
+        "y": 513.6
+      },
+      "line_id": "l-1770955365153-sq5zidh9"
+    },
+    {
+      "id": "h-1770955436389-pucn1rqk",
+      "name": "Single Window",
+      "type": "window",
+      "width": 91.4,
+      "cx": -397.0,
+      "cy": -241.2,
+      "p0": {
+        "x": -397.0,
+        "y": -195.5
+      },
+      "p1": {
+        "x": -397.0,
+        "y": -286.9
+      },
+      "leaf": {
+        "x": -305.6,
+        "y": -195.5
+      },
+      "line_id": "l-1770955324788-kqqaov3y"
+    },
+    {
+      "id": "h-1770955442429-5g60tho3",
+      "name": "Single Window",
+      "type": "window",
+      "width": 91.4,
+      "cx": -397.0,
+      "cy": 285.5,
+      "p0": {
+        "x": -397.0,
+        "y": 239.8
+      },
+      "p1": {
+        "x": -397.0,
+        "y": 331.2
+      },
+      "leaf": {
+        "x": -488.4,
+        "y": 239.8
+      },
+      "line_id": "l-1770955349562-yg5bn603"
+    },
+    {
+      "id": "h-1770955449714-1m70tvyp",
+      "name": "Single Window",
+      "type": "window",
+      "width": 91.4,
+      "cx": -266.3,
+      "cy": 605.0,
+      "p0": {
+        "x": -312.0,
+        "y": 605.0
+      },
+      "p1": {
+        "x": -220.6,
+        "y": 605.0
+      },
+      "leaf": {
+        "x": -312.0,
+        "y": 696.4
+      },
+      "line_id": "l-1770955351896-ghieunlw"
+    },
+    {
+      "id": "h-1770955456472-qnjn4rx1",
+      "name": "Single Window",
+      "type": "window",
+      "width": 91.4,
+      "cx": -184.0,
+      "cy": -449.0,
+      "p0": {
+        "x": -229.7,
+        "y": -449.0
+      },
+      "p1": {
+        "x": -138.3,
+        "y": -449.0
+      },
+      "leaf": {
+        "x": -229.7,
+        "y": -357.6
+      },
+      "line_id": "l-1770955317821-cpucm0kw"
+    },
+    {
+      "id": "h-1770955466388-ba4rw4gy",
+      "name": "Nordic_Bathroom_Ventilator",
+      "type": "window",
+      "width": 60.0,
+      "cx": 200.4,
+      "cy": -449.0,
+      "p0": {
+        "x": 170.4,
+        "y": -449.0
+      },
+      "p1": {
+        "x": 230.4,
+        "y": -449.0
+      },
+      "leaf": {
+        "x": 170.4,
+        "y": -389.0
+      },
+      "line_id": "l-1770955334813-vvcf4e6n"
+    }
+  ],
+  "raw_json": {
+    "unit": "sqft",
+    "direction": "South",
+    "directionangle": 0,
+    "layers": {
+      "layer-1": {
+        "id": "layer-1",
+        "altitude": 0,
+        "order": 0,
+        "opacity": 1,
+        "name": "Ground Floor",
+        "visible": true,
+        "vertices": {
+          "v-1770955317822-0": {
+            "id": "v-1770955317822-0",
+            "type": "vertex",
+            "prototype": "vertices",
+            "name": "Vertex",
+            "misc": {},
+            "selected": false,
+            "properties": {},
+            "visible": true,
+            "x": -397,
+            "y": -449,
+            "lines": [
+              "l-1770955317821-cpucm0kw",
+              "l-1770955324788-kqqaov3y"
+            ],
+            "areas": [
+              "a-1770955324792-8uewx7i2"
+            ]
+          },
+          "v-1770955317822-1": {
+            "id": "v-1770955317822-1",
+            "type": "vertex",
+            "prototype": "vertices",
+            "name": "Vertex",
+            "misc": {},
+            "selected": false,
+            "properties": {},
+            "visible": true,
+            "x": 55,
+            "y": -449,
+            "lines": [
+              "l-1770955317821-cpucm0kw",
+              "l-1770955334813-vvcf4e6n",
+              "l-1770955339733-1770955339733"
+            ],
+            "areas": [
+              "a-1770955324792-8uewx7i2",
+              "a-1770955339845-sep4p0q8"
+            ]
+          },
+          "v-1770955319857-1": {
+            "id": "v-1770955319857-1",
+            "type": "vertex",
+            "prototype": "vertices",
+            "name": "Vertex",
+            "misc": {},
+            "selected": false,
+            "properties": {},
+            "visible": true,
+            "x": 55,
+            "y": 53,
+            "lines": [
+              "l-1770955322999-v258fb0v",
+              "l-1770955339733-1770955339734",
+              "l-1770955353978-dkaguayl"
+            ],
+            "areas": [
+              "a-1770955324792-8uewx7i2",
+              "a-1770955354118-ko2gu9tn",
+              "a-1770955365279-354luvc8"
+            ]
+          },
+          "v-1770955323002-1": {
+            "id": "v-1770955323002-1",
+            "type": "vertex",
+            "prototype": "vertices",
+            "name": "Vertex",
+            "misc": {},
+            "selected": false,
+            "properties": {},
+            "visible": true,
+            "x": -397,
+            "y": 53,
+            "lines": [
+              "l-1770955322999-v258fb0v",
+              "l-1770955324788-kqqaov3y",
+              "l-1770955349562-yg5bn603"
+            ],
+            "areas": [
+              "a-1770955324792-8uewx7i2",
+              "a-1770955354118-ko2gu9tn"
+            ]
+          },
+          "v-1770955334815-1": {
+            "id": "v-1770955334815-1",
+            "type": "vertex",
+            "prototype": "vertices",
+            "name": "Vertex",
+            "misc": {},
+            "selected": false,
+            "properties": {},
+            "visible": true,
+            "x": 355,
+            "y": -449,
+            "lines": [
+              "l-1770955334813-vvcf4e6n",
+              "l-1770955337612-o1ln1top"
+            ],
+            "areas": [
+              "a-1770955339845-sep4p0q8"
+            ]
+          },
+          "v-1770955337614-1": {
+            "id": "v-1770955337614-1",
+            "type": "vertex",
+            "prototype": "vertices",
+            "name": "Vertex",
+            "misc": {},
+            "selected": false,
+            "properties": {},
+            "visible": true,
+            "x": 355,
+            "y": -71,
+            "lines": [
+              "l-1770955337612-o1ln1top",
+              "l-1770955339731-n9667xxv",
+              "l-1770955363054-ugrb7ywo"
+            ],
+            "areas": [
+              "a-1770955339845-sep4p0q8",
+              "a-1770955365279-354luvc8"
+            ]
+          },
+          "v-1770955339733-1770955339733": {
+            "id": "v-1770955339733-1770955339733",
+            "type": "",
+            "prototype": "vertices",
+            "name": "Vertex",
+            "misc": {},
+            "selected": false,
+            "properties": {},
+            "visible": true,
+            "x": 55,
+            "y": -71,
+            "lines": [
+              "l-1770955339733-1770955339733",
+              "l-1770955339733-1770955339734",
+              "l-1770955339731-n9667xxv"
+            ],
+            "areas": [
+              "a-1770955324792-8uewx7i2",
+              "a-1770955339845-sep4p0q8",
+              "a-1770955365279-354luvc8"
+            ]
+          },
+          "v-1770955349563-1": {
+            "id": "v-1770955349563-1",
+            "type": "vertex",
+            "prototype": "vertices",
+            "name": "Vertex",
+            "misc": {},
+            "selected": false,
+            "properties": {},
+            "visible": true,
+            "x": -397,
+            "y": 605,
+            "lines": [
+              "l-1770955349562-yg5bn603",
+              "l-1770955351896-ghieunlw"
+            ],
+            "areas": [
+              "a-1770955354118-ko2gu9tn"
+            ]
+          },
+          "v-1770955351898-1": {
+            "id": "v-1770955351898-1",
+            "type": "vertex",
+            "prototype": "vertices",
+            "name": "Vertex",
+            "misc": {},
+            "selected": false,
+            "properties": {},
+            "visible": true,
+            "x": 55,
+            "y": 605,
+            "lines": [
+              "l-1770955351896-ghieunlw",
+              "l-1770955353978-dkaguayl",
+              "l-1770955365153-sq5zidh9"
+            ],
+            "areas": [
+              "a-1770955354118-ko2gu9tn",
+              "a-1770955365279-354luvc8"
+            ]
+          },
+          "v-1770955363056-1": {
+            "id": "v-1770955363056-1",
+            "type": "vertex",
+            "prototype": "vertices",
+            "name": "Vertex",
+            "misc": {},
+            "selected": false,
+            "properties": {},
+            "visible": true,
+            "x": 355,
+            "y": 605,
+            "lines": [
+              "l-1770955363054-ugrb7ywo",
+              "l-1770955365153-sq5zidh9"
+            ],
+            "areas": [
+              "a-1770955365279-354luvc8"
+            ]
+          }
+        },
+        "lines": {
+          "l-1770955317821-cpucm0kw": {
+            "id": "l-1770955317821-cpucm0kw",
+            "type": "wall",
+            "prototype": "lines",
+            "name": "Wall",
+            "misc": {
+              "_unitLength": "ft"
+            },
+            "selected": false,
+            "properties": {
+              "height": {
+                "length": 304.8
+              },
+              "thickness": {
+                "length": 22.86
+              },
+              "textureA": "Brick",
+              "textureB": "Brick"
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955317822-0",
+              "v-1770955317822-1"
+            ],
+            "holes": [
+              "h-1770955456472-qnjn4rx1"
+            ],
+            "inner_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            },
+            "outer_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            }
+          },
+          "l-1770955322999-v258fb0v": {
+            "id": "l-1770955322999-v258fb0v",
+            "type": "wall",
+            "prototype": "lines",
+            "name": "Wall",
+            "misc": {
+              "_unitLength": "ft"
+            },
+            "selected": false,
+            "properties": {
+              "height": {
+                "length": 304.8
+              },
+              "thickness": {
+                "length": 22.86
+              },
+              "textureA": "Brick",
+              "textureB": "Brick"
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955319857-1",
+              "v-1770955323002-1"
+            ],
+            "holes": [
+              "h-1770955397447-mkamxgmw"
+            ],
+            "inner_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            },
+            "outer_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            }
+          },
+          "l-1770955324788-kqqaov3y": {
+            "id": "l-1770955324788-kqqaov3y",
+            "type": "wall",
+            "prototype": "lines",
+            "name": "Wall",
+            "misc": {
+              "_unitLength": "ft"
+            },
+            "selected": false,
+            "properties": {
+              "height": {
+                "length": 304.8
+              },
+              "thickness": {
+                "length": 22.86
+              },
+              "textureA": "Brick",
+              "textureB": "Brick"
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955323002-1",
+              "v-1770955317822-0"
+            ],
+            "holes": [
+              "h-1770955436389-pucn1rqk"
+            ],
+            "inner_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            },
+            "outer_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            }
+          },
+          "l-1770955334813-vvcf4e6n": {
+            "id": "l-1770955334813-vvcf4e6n",
+            "type": "wall",
+            "prototype": "lines",
+            "name": "Wall",
+            "misc": {
+              "_unitLength": "ft"
+            },
+            "selected": false,
+            "properties": {
+              "height": {
+                "length": 304.8
+              },
+              "thickness": {
+                "length": 22.86
+              },
+              "textureA": "Brick",
+              "textureB": "Brick"
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955317822-1",
+              "v-1770955334815-1"
+            ],
+            "holes": [
+              "h-1770955466388-ba4rw4gy"
+            ],
+            "inner_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            },
+            "outer_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            }
+          },
+          "l-1770955337612-o1ln1top": {
+            "id": "l-1770955337612-o1ln1top",
+            "type": "wall",
+            "prototype": "lines",
+            "name": "Wall",
+            "misc": {
+              "_unitLength": "ft"
+            },
+            "selected": false,
+            "properties": {
+              "height": {
+                "length": 304.8
+              },
+              "thickness": {
+                "length": 22.86
+              },
+              "textureA": "Brick",
+              "textureB": "Brick"
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955334815-1",
+              "v-1770955337614-1"
+            ],
+            "holes": [],
+            "inner_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            },
+            "outer_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            }
+          },
+          "l-1770955339733-1770955339733": {
+            "id": "l-1770955339733-1770955339733",
+            "type": "wall",
+            "prototype": "lines",
+            "name": "Wall",
+            "misc": {
+              "_unitLength": "ft"
+            },
+            "selected": false,
+            "properties": {
+              "height": {
+                "length": 304.8
+              },
+              "thickness": {
+                "length": 22.86
+              },
+              "textureA": "Brick",
+              "textureB": "Brick"
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955317822-1",
+              "v-1770955339733-1770955339733"
+            ],
+            "holes": [],
+            "inner_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            },
+            "outer_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            }
+          },
+          "l-1770955339733-1770955339734": {
+            "id": "l-1770955339733-1770955339734",
+            "type": "wall",
+            "prototype": "lines",
+            "name": "Wall",
+            "misc": {
+              "_unitLength": "ft"
+            },
+            "selected": false,
+            "properties": {
+              "height": {
+                "length": 304.8
+              },
+              "thickness": {
+                "length": 22.86
+              },
+              "textureA": "Brick",
+              "textureB": "Brick"
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955339733-1770955339733",
+              "v-1770955319857-1"
+            ],
+            "holes": [],
+            "inner_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            },
+            "outer_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            }
+          },
+          "l-1770955339731-n9667xxv": {
+            "id": "l-1770955339731-n9667xxv",
+            "type": "wall",
+            "prototype": "lines",
+            "name": "Wall",
+            "misc": {
+              "_unitLength": "ft"
+            },
+            "selected": false,
+            "properties": {
+              "height": {
+                "length": 304.8
+              },
+              "thickness": {
+                "length": 22.86
+              },
+              "textureA": "Brick",
+              "textureB": "Brick"
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955337614-1",
+              "v-1770955339733-1770955339733"
+            ],
+            "holes": [
+              "h-1770955406537-081f5rzf"
+            ],
+            "inner_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            },
+            "outer_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            }
+          },
+          "l-1770955349562-yg5bn603": {
+            "id": "l-1770955349562-yg5bn603",
+            "type": "wall",
+            "prototype": "lines",
+            "name": "Wall",
+            "misc": {
+              "_unitLength": "ft"
+            },
+            "selected": false,
+            "properties": {
+              "height": {
+                "length": 304.8
+              },
+              "thickness": {
+                "length": 22.86
+              },
+              "textureA": "Brick",
+              "textureB": "Brick"
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955323002-1",
+              "v-1770955349563-1"
+            ],
+            "holes": [
+              "h-1770955442429-5g60tho3"
+            ],
+            "inner_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            },
+            "outer_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            }
+          },
+          "l-1770955351896-ghieunlw": {
+            "id": "l-1770955351896-ghieunlw",
+            "type": "wall",
+            "prototype": "lines",
+            "name": "Wall",
+            "misc": {
+              "_unitLength": "ft"
+            },
+            "selected": false,
+            "properties": {
+              "height": {
+                "length": 304.8
+              },
+              "thickness": {
+                "length": 22.86
+              },
+              "textureA": "Brick",
+              "textureB": "Brick"
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955349563-1",
+              "v-1770955351898-1"
+            ],
+            "holes": [
+              "h-1770955386664-40n58pqa",
+              "h-1770955449714-1m70tvyp"
+            ],
+            "inner_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            },
+            "outer_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            }
+          },
+          "l-1770955353978-dkaguayl": {
+            "id": "l-1770955353978-dkaguayl",
+            "type": "wall",
+            "prototype": "lines",
+            "name": "Wall",
+            "misc": {
+              "_unitLength": "ft"
+            },
+            "selected": false,
+            "properties": {
+              "height": {
+                "length": 304.8
+              },
+              "thickness": {
+                "length": 22.86
+              },
+              "textureA": "Brick",
+              "textureB": "Brick"
+            },
+            "visible": false,
+            "vertices": [
+              "v-1770955351898-1",
+              "v-1770955319857-1"
+            ],
+            "holes": [],
+            "inner_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            },
+            "outer_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            }
+          },
+          "l-1770955363054-ugrb7ywo": {
+            "id": "l-1770955363054-ugrb7ywo",
+            "type": "wall",
+            "prototype": "lines",
+            "name": "Wall",
+            "misc": {
+              "_unitLength": "ft"
+            },
+            "selected": false,
+            "properties": {
+              "height": {
+                "length": 304.8
+              },
+              "thickness": {
+                "length": 22.86
+              },
+              "textureA": "Brick",
+              "textureB": "Brick"
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955337614-1",
+              "v-1770955363056-1"
+            ],
+            "holes": [
+              "h-1770955419858-zf7n4xx9"
+            ],
+            "inner_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            },
+            "outer_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            }
+          },
+          "l-1770955365153-sq5zidh9": {
+            "id": "l-1770955365153-sq5zidh9",
+            "type": "wall",
+            "prototype": "lines",
+            "name": "Wall",
+            "misc": {
+              "_unitLength": "ft"
+            },
+            "selected": false,
+            "properties": {
+              "height": {
+                "length": 304.8
+              },
+              "thickness": {
+                "length": 22.86
+              },
+              "textureA": "Brick",
+              "textureB": "Brick"
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955363056-1",
+              "v-1770955351898-1"
+            ],
+            "holes": [
+              "h-1770955426589-21kscflt"
+            ],
+            "inner_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            },
+            "outer_properties": {
+              "material": {
+                "color": "#999999",
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            }
+          }
+        },
+        "holes": {
+          "h-1770955386664-40n58pqa": {
+            "id": "h-1770955386664-40n58pqa",
+            "type": "Construction",
+            "prototype": "holes",
+            "name": "Single Door",
+            "misc": {},
+            "selected": false,
+            "properties": {
+              "width": {
+                "length": 81.3
+              },
+              "height": {
+                "length": 203.2
+              },
+              "thickness": {
+                "length": 13.7
+              },
+              "altitude": {
+                "length": 0
+              }
+            },
+            "visible": true,
+            "offset": 0.8141592920353983,
+            "line": "l-1770955351896-ghieunlw",
+            "asset_urls": {
+              "assetId_3D": 11,
+              "SVG_URL": "https://zrealtystoragedev.blob.core.windows.net/asset-library/Doors/Door/Svg_Door.svg",
+              "OBJ_File_URL": "",
+              "MTL_File_URL": "",
+              "GLB_File_URL": "glb-assets/Door/Default_Door/Closed_Door/DoorClosed_LP.glb"
+            },
+            "materials": {},
+            "flipX": true,
+            "flipZ": true
+          },
+          "h-1770955397447-mkamxgmw": {
+            "id": "h-1770955397447-mkamxgmw",
+            "type": "Construction",
+            "prototype": "holes",
+            "name": "Single Door",
+            "misc": {},
+            "selected": false,
+            "properties": {
+              "width": {
+                "length": 81.3
+              },
+              "height": {
+                "length": 203.2
+              },
+              "thickness": {
+                "length": 13.7
+              },
+              "altitude": {
+                "length": 0
+              }
+            },
+            "visible": true,
+            "offset": 0.1592920353982301,
+            "line": "l-1770955322999-v258fb0v",
+            "asset_urls": {
+              "assetId_3D": 11,
+              "SVG_URL": "https://zrealtystoragedev.blob.core.windows.net/asset-library/Doors/Door/Svg_Door.svg",
+              "OBJ_File_URL": "",
+              "MTL_File_URL": "",
+              "GLB_File_URL": "glb-assets/Door/Default_Door/Closed_Door/DoorClosed_LP.glb"
+            },
+            "materials": {},
+            "flipX": false,
+            "flipZ": false
+          },
+          "h-1770955406537-081f5rzf": {
+            "id": "h-1770955406537-081f5rzf",
+            "type": "Construction",
+            "prototype": "holes",
+            "name": "Single Door",
+            "misc": {},
+            "selected": false,
+            "properties": {
+              "width": {
+                "length": 81.3
+              },
+              "height": {
+                "length": 203.2
+              },
+              "thickness": {
+                "length": 13.7
+              },
+              "altitude": {
+                "length": 0
+              }
+            },
+            "visible": true,
+            "offset": 0.24666666666666667,
+            "line": "l-1770955339731-n9667xxv",
+            "asset_urls": {
+              "assetId_3D": 11,
+              "SVG_URL": "https://zrealtystoragedev.blob.core.windows.net/asset-library/Doors/Door/Svg_Door.svg",
+              "OBJ_File_URL": "",
+              "MTL_File_URL": "",
+              "GLB_File_URL": "glb-assets/Door/Default_Door/Closed_Door/DoorClosed_LP.glb"
+            },
+            "materials": {},
+            "flipX": false,
+            "flipZ": false
+          },
+          "h-1770955419858-zf7n4xx9": {
+            "id": "h-1770955419858-zf7n4xx9",
+            "type": "Construction",
+            "prototype": "holes",
+            "name": "Single Window",
+            "misc": {},
+            "selected": false,
+            "properties": {
+              "width": {
+                "length": 91.4
+              },
+              "height": {
+                "length": 121.9
+              },
+              "thickness": {
+                "length": 8
+              },
+              "altitude": {
+                "length": 82
+              }
+            },
+            "visible": true,
+            "offset": 0.4747026477795708,
+            "line": "l-1770955363054-ugrb7ywo",
+            "asset_urls": {
+              "assetId_3D": 12,
+              "SVG_URL": "https://zrealtystoragedev.blob.core.windows.net/asset-library/Windows/Window/Svg_Window.svg",
+              "OBJ_File_URL": "",
+              "MTL_File_URL": "",
+              "GLB_File_URL": "glb-assets/Window/Default_Window/Window_LP.glb"
+            },
+            "materials": {},
+            "flipX": false,
+            "flipZ": false
+          },
+          "h-1770955426589-21kscflt": {
+            "id": "h-1770955426589-21kscflt",
+            "type": "Construction",
+            "prototype": "holes",
+            "name": "Single Window",
+            "misc": {},
+            "selected": false,
+            "properties": {
+              "width": {
+                "length": 91.4
+              },
+              "height": {
+                "length": 121.9
+              },
+              "thickness": {
+                "length": 8
+              },
+              "altitude": {
+                "length": 82
+              }
+            },
+            "visible": true,
+            "offset": 0.36717171717171715,
+            "line": "l-1770955365153-sq5zidh9",
+            "asset_urls": {
+              "assetId_3D": 12,
+              "SVG_URL": "https://zrealtystoragedev.blob.core.windows.net/asset-library/Windows/Window/Svg_Window.svg",
+              "OBJ_File_URL": "",
+              "MTL_File_URL": "",
+              "GLB_File_URL": "glb-assets/Window/Default_Window/Window_LP.glb"
+            },
+            "materials": {},
+            "flipX": false,
+            "flipZ": false
+          },
+          "h-1770955436389-pucn1rqk": {
+            "id": "h-1770955436389-pucn1rqk",
+            "type": "Construction",
+            "prototype": "holes",
+            "name": "Single Window",
+            "misc": {},
+            "selected": false,
+            "properties": {
+              "width": {
+                "length": 91.4
+              },
+              "height": {
+                "length": 121.9
+              },
+              "thickness": {
+                "length": 8
+              },
+              "altitude": {
+                "length": 82
+              }
+            },
+            "visible": true,
+            "offset": 0.5860799227333092,
+            "line": "l-1770955324788-kqqaov3y",
+            "asset_urls": {
+              "assetId_3D": 12,
+              "SVG_URL": "https://zrealtystoragedev.blob.core.windows.net/asset-library/Windows/Window/Svg_Window.svg",
+              "OBJ_File_URL": "",
+              "MTL_File_URL": "",
+              "GLB_File_URL": "glb-assets/Window/Default_Window/Window_LP.glb"
+            },
+            "materials": {},
+            "flipX": false,
+            "flipZ": false
+          },
+          "h-1770955442429-5g60tho3": {
+            "id": "h-1770955442429-5g60tho3",
+            "type": "Construction",
+            "prototype": "holes",
+            "name": "Single Window",
+            "misc": {},
+            "selected": false,
+            "properties": {
+              "width": {
+                "length": 91.4
+              },
+              "height": {
+                "length": 121.9
+              },
+              "thickness": {
+                "length": 8
+              },
+              "altitude": {
+                "length": 82
+              }
+            },
+            "visible": true,
+            "offset": 0.4211133069828722,
+            "line": "l-1770955349562-yg5bn603",
+            "asset_urls": {
+              "assetId_3D": 12,
+              "SVG_URL": "https://zrealtystoragedev.blob.core.windows.net/asset-library/Windows/Window/Svg_Window.svg",
+              "OBJ_File_URL": "",
+              "MTL_File_URL": "",
+              "GLB_File_URL": "glb-assets/Window/Default_Window/Window_LP.glb"
+            },
+            "materials": {},
+            "flipX": false,
+            "flipZ": false
+          },
+          "h-1770955449714-1m70tvyp": {
+            "id": "h-1770955449714-1m70tvyp",
+            "type": "Construction",
+            "prototype": "holes",
+            "name": "Single Window",
+            "misc": {},
+            "selected": false,
+            "properties": {
+              "width": {
+                "length": 91.4
+              },
+              "height": {
+                "length": 121.9
+              },
+              "thickness": {
+                "length": 8
+              },
+              "altitude": {
+                "length": 82
+              }
+            },
+            "visible": true,
+            "offset": 0.2892419772950746,
+            "line": "l-1770955351896-ghieunlw",
+            "asset_urls": {
+              "assetId_3D": 12,
+              "SVG_URL": "https://zrealtystoragedev.blob.core.windows.net/asset-library/Windows/Window/Svg_Window.svg",
+              "OBJ_File_URL": "",
+              "MTL_File_URL": "",
+              "GLB_File_URL": "glb-assets/Window/Default_Window/Window_LP.glb"
+            },
+            "materials": {},
+            "flipX": false,
+            "flipZ": false
+          },
+          "h-1770955456472-qnjn4rx1": {
+            "id": "h-1770955456472-qnjn4rx1",
+            "type": "Construction",
+            "prototype": "holes",
+            "name": "Single Window",
+            "misc": {},
+            "selected": false,
+            "properties": {
+              "width": {
+                "length": 91.4
+              },
+              "height": {
+                "length": 121.9
+              },
+              "thickness": {
+                "length": 8
+              },
+              "altitude": {
+                "length": 82
+              }
+            },
+            "visible": true,
+            "offset": 0.471149548583177,
+            "line": "l-1770955317821-cpucm0kw",
+            "asset_urls": {
+              "assetId_3D": 12,
+              "SVG_URL": "https://zrealtystoragedev.blob.core.windows.net/asset-library/Windows/Window/Svg_Window.svg",
+              "OBJ_File_URL": "",
+              "MTL_File_URL": "",
+              "GLB_File_URL": "glb-assets/Window/Default_Window/Window_LP.glb"
+            },
+            "materials": {},
+            "flipX": false,
+            "flipZ": false
+          },
+          "h-1770955466388-ba4rw4gy": {
+            "id": "h-1770955466388-ba4rw4gy",
+            "type": "Bath fixtures",
+            "prototype": "holes",
+            "name": "Nordic_Bathroom_Ventilator",
+            "misc": {},
+            "selected": false,
+            "properties": {
+              "width": {
+                "length": 60
+              },
+              "height": {
+                "length": 75
+              },
+              "thickness": {
+                "length": 10
+              },
+              "altitude": {
+                "length": 150
+              }
+            },
+            "visible": true,
+            "offset": 0.48468013468013477,
+            "line": "l-1770955334813-vvcf4e6n",
+            "asset_urls": {
+              "assetId_3D": 176,
+              "SVG_URL": "https://zrealtystoragedev.blob.core.windows.net/asset-library/Windows/Nordic_Bathroom_Ventilator/Svg_Bathroom_Ventilator.svg",
+              "OBJ_File_URL": "",
+              "MTL_File_URL": "",
+              "GLB_File_URL": "glb-assets/Window/Ventilator/Ventilator_compressed.glb"
+            },
+            "materials": {},
+            "flipX": false,
+            "flipZ": false
+          }
+        },
+        "areas": {
+          "a-1770955324792-8uewx7i2": {
+            "id": "a-1770955324792-8uewx7i2",
+            "type": "area",
+            "prototype": "areas",
+            "name": "Bedroom",
+            "misc": {},
+            "selected": false,
+            "properties": {
+              "texture": "none",
+              "height": {
+                "length": 0
+              }
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955317822-0",
+              "v-1770955317822-1",
+              "v-1770955339733-1770955339733",
+              "v-1770955319857-1",
+              "v-1770955323002-1"
+            ],
+            "holes": [],
+            "ceiling_properties": {
+              "isvisible": true,
+              "height": 300,
+              "thickness": 1,
+              "material": {
+                "color": "ffffff",
+                "repeat": [
+                  1,
+                  1
+                ],
+                "rotation": 0,
+                "flipY": false
+              }
+            },
+            "floor_properties": {
+              "isvisible": true,
+              "height": 0,
+              "thickness": 10,
+              "material": {
+                "mapUrl": "https://zrealtystoragedev.blob.core.windows.net/textures/LowResolution/Wood/Wood%20floor%20/Wood091A_4K-PNG_LR_Color.jpg",
+                "normalUrl": "",
+                "roughnessUrl": "",
+                "metalnessUrl": "",
+                "color": "ffffff",
+                "aoUrl": "",
+                "emissionUrl": "",
+                "displacementUrl": "",
+                "repeat": [
+                  1,
+                  1
+                ],
+                "rotation": 0,
+                "flipY": false
+              }
+            }
+          },
+          "a-1770955339845-sep4p0q8": {
+            "id": "a-1770955339845-sep4p0q8",
+            "type": "area",
+            "prototype": "areas",
+            "name": "Toilet",
+            "misc": {},
+            "selected": false,
+            "properties": {
+              "texture": "none",
+              "height": {
+                "length": 0
+              }
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955337614-1",
+              "v-1770955334815-1",
+              "v-1770955317822-1",
+              "v-1770955339733-1770955339733"
+            ],
+            "holes": [],
+            "ceiling_properties": {
+              "isvisible": true,
+              "height": 300,
+              "thickness": 1,
+              "material": {
+                "color": "ffffff",
+                "repeat": [
+                  1,
+                  1
+                ],
+                "rotation": 0,
+                "flipY": false
+              }
+            },
+            "floor_properties": {
+              "isvisible": true,
+              "height": 0,
+              "thickness": 10,
+              "material": {
+                "mapUrl": "https://zrealtystoragedev.blob.core.windows.net/textures/LowResolution/Wood/Wood%20floor%20/Wood091A_4K-PNG_LR_Color.jpg",
+                "normalUrl": "",
+                "roughnessUrl": "",
+                "metalnessUrl": "",
+                "color": "ffffff",
+                "aoUrl": "",
+                "emissionUrl": "",
+                "displacementUrl": "",
+                "repeat": [
+                  1,
+                  1
+                ],
+                "rotation": 0,
+                "flipY": false
+              }
+            }
+          },
+          "a-1770955354118-ko2gu9tn": {
+            "id": "a-1770955354118-ko2gu9tn",
+            "type": "area",
+            "prototype": "areas",
+            "name": "Living Room",
+            "misc": {},
+            "selected": false,
+            "properties": {
+              "texture": "none",
+              "height": {
+                "length": 0
+              }
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955351898-1",
+              "v-1770955349563-1",
+              "v-1770955323002-1",
+              "v-1770955319857-1"
+            ],
+            "holes": [],
+            "ceiling_properties": {
+              "isvisible": true,
+              "height": 300,
+              "thickness": 1,
+              "material": {
+                "color": "ffffff",
+                "repeat": [
+                  1,
+                  1
+                ],
+                "rotation": 0,
+                "flipY": false
+              }
+            },
+            "floor_properties": {
+              "isvisible": true,
+              "height": 0,
+              "thickness": 10,
+              "material": {
+                "mapUrl": "https://zrealtystoragedev.blob.core.windows.net/textures/LowResolution/Wood/Wood%20floor%20/Wood091A_4K-PNG_LR_Color.jpg",
+                "normalUrl": "",
+                "roughnessUrl": "",
+                "metalnessUrl": "",
+                "color": "ffffff",
+                "aoUrl": "",
+                "emissionUrl": "",
+                "displacementUrl": "",
+                "repeat": [
+                  1,
+                  1
+                ],
+                "rotation": 0,
+                "flipY": false
+              }
+            }
+          },
+          "a-1770955365279-354luvc8": {
+            "id": "a-1770955365279-354luvc8",
+            "type": "area",
+            "prototype": "areas",
+            "name": "Kitchen",
+            "misc": {},
+            "selected": false,
+            "properties": {
+              "texture": "none",
+              "height": {
+                "length": 0
+              }
+            },
+            "visible": true,
+            "vertices": [
+              "v-1770955363056-1",
+              "v-1770955337614-1",
+              "v-1770955339733-1770955339733",
+              "v-1770955319857-1",
+              "v-1770955351898-1"
+            ],
+            "holes": [],
+            "ceiling_properties": {
+              "isvisible": true,
+              "height": 300,
+              "thickness": 1,
+              "material": {
+                "color": "ffffff",
+                "repeat": [
+                  1,
+                  1
+                ],
+                "rotation": 0,
+                "flipY": false
+              }
+            },
+            "floor_properties": {
+              "isvisible": true,
+              "height": 0,
+              "thickness": 10,
+              "material": {
+                "mapUrl": "https://zrealtystoragedev.blob.core.windows.net/textures/LowResolution/Wood/Wood%20floor%20/Wood091A_4K-PNG_LR_Color.jpg",
+                "normalUrl": "",
+                "roughnessUrl": "",
+                "metalnessUrl": "",
+                "color": "ffffff",
+                "aoUrl": "",
+                "emissionUrl": "",
+                "displacementUrl": "",
+                "repeat": [
+                  1,
+                  1
+                ],
+                "rotation": 0,
+                "flipY": false
+              }
+            }
+          }
+        },
+        "items": {},
+        "externalAreas": {},
+        "structures": {},
+        "selected": {
+          "vertices": [],
+          "lines": [],
+          "holes": [],
+          "areas": [],
+          "items": [],
+          "externalAreas": [],
+          "structures": []
+        }
+      }
+    },
+    "grids": {},
+    "selectedLayer": "layer-1",
+    "groups": {},
+    "width": 304.8001474842926,
+    "height": 304.8001474842926,
+    "meta": {
+      "export_timestamp": "2026-02-13T04:01:12.034Z",
+      "format_version": "2.1",
+      "generated_by": "Site_Area_Generator",
+      "session_id": 1770955272034
+    },
+    "guides": {
+      "horizontal": {},
+      "vertical": {},
+      "circular": {}
+    },
+    "undoStack": [],
+    "redoStack": [],
+    "showAllFloors": false,
+    "suspendUndo": false,
+    "pendingSnapshot": null,
+    "name": "1BHK",
+    "totalArea": 853.15
+  }
+};
+
+        // Canvas Zoom & Pan Transform State
+        let scale = 1.0;
+        let panX = 0;
+        let panY = 0;
+        let isPanning = false;
+        let startX = 0;
+        let startY = 0;
+
+        const visibility = {
+            rooms: true,
+            walls: true,
+            doors: true,
+            windows: true,
+            dims: false
+        };
+
+        window.addEventListener('DOMContentLoaded', () => {
+            setupDragAndDrop();
+            setupPanZoomEvents();
+            renderFloorplan(floorplanData);
+        });
+
+        function renderFloorplan(data) {
+            floorplanData = data;
+            
+            // Header stats
+            document.getElementById('metaAreaM2').innerText = data.total_area_m2 || 0;
+            document.getElementById('metaAreaSqft').innerText = data.total_area_sqft || 0;
+            document.getElementById('metaUnit').innerText = (data.unit || 'cm').toUpperCase();
+            document.getElementById('cntDoors').innerText = data.doors_count || 0;
+            document.getElementById('cntWindows').innerText = data.windows_count || 0;
+            document.getElementById('cntRooms').innerText = data.rooms_count || 0;
+
+            // Rotate compass rose according to direction angle
+            const angle = data.direction_angle || 0;
+            document.getElementById('compassElem').style.transform = `rotate(${angle}deg)`;
+
+            // Render right side room cards
+            renderRoomCards(data.rooms || []);
+
+            // Render raw JSON in inspector
+            document.getElementById('jsonTreeBox').innerText = JSON.stringify(data.raw_json, null, 2);
+
+            // Compute Bounding Box
+            const walls = data.walls || [];
+            const rooms = data.rooms || [];
+            const openings = data.openings || [];
+
+            let allPoints = [];
+            rooms.forEach(r => r.polygon.forEach(p => allPoints.push(p)));
+            walls.forEach(w => {
+                allPoints.push({ x: w.x1, y: w.y1 });
+                allPoints.push({ x: w.x2, y: w.y2 });
+            });
+            openings.forEach(o => {
+                allPoints.push({ x: o.cx, y: o.cy });
+                if (o.p0) allPoints.push(o.p0);
+                if (o.p1) allPoints.push(o.p1);
+            });
+
+            if (allPoints.length === 0) return;
+
+            const minX = Math.min(...allPoints.map(p => p.x));
+            const maxX = Math.max(...allPoints.map(p => p.x));
+            const minY = Math.min(...allPoints.map(p => p.y));
+            const maxY = Math.max(...allPoints.map(p => p.y));
+
+            const bboxWidth = Math.max(maxX - minX, 100);
+            const bboxHeight = Math.max(maxY - minY, 100);
+
+            // Render Structural Walls
+            const wallsGroup = document.getElementById('wallsGroup');
+            wallsGroup.innerHTML = walls.map(w => `
+                <line x1="${w.x1}" y1="${w.y1}" x2="${w.x2}" y2="${w.y2}" stroke="#475569" stroke-width="7" stroke-linecap="round" />
+            `).join('');
+
+            // Render Rooms
+            const colors = ['#6366f1', '#06b6d4', '#10b981', '#f59e0b', '#ec4899', '#8b5cf6'];
+            const roomsGroup = document.getElementById('roomsGroup');
+            roomsGroup.innerHTML = rooms.map((r, i) => {
+                const pts = r.polygon.map(p => `${p.x},${p.y}`).join(' ');
+                const c = colors[i % colors.length];
+                const cx = r.center.x;
+                const cy = r.center.y;
+                return `
+                    <g class="room-polygon-g" id="poly_room_${r.id}" onclick="selectRoomCard('${r.id}')">
+                        <polygon points="${pts}" fill="${c}" fill-opacity="0.25" stroke="${c}" stroke-width="2.5" />
+                        <text x="${cx}" y="${cy - 8}" fill="#ffffff" font-size="18" font-weight="700" text-anchor="middle">${r.name}</text>
+                        <text x="${cx}" y="${cy + 14}" fill="#94a3b8" font-size="13" font-weight="600" text-anchor="middle">${r.area_m2} m² (${r.area_sqft} sqft)</text>
+                    </g>
+                `;
+            }).join('');
+
+            // Render Openings (Doors & Windows)
+            const openingsGroup = document.getElementById('openingsGroup');
+            openingsGroup.innerHTML = openings.map(o => {
+                if (o.type === 'door') {
+                    const jamb = `<line x1="${o.p0.x}" y1="${o.p0.y}" x2="${o.p1.x}" y2="${o.p1.y}" stroke="#f59e0b" stroke-width="6" stroke-linecap="square" />`;
+                    const leaf = `<line x1="${o.p0.x}" y1="${o.p0.y}" x2="${o.leaf.x}" y2="${o.leaf.y}" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round" />`;
+                    const swingArc = `<path d="M ${o.leaf.x} ${o.leaf.y} A ${o.width} ${o.width} 0 0 1 ${o.p1.x} ${o.p1.y}" fill="rgba(245, 158, 11, 0.12)" stroke="#f59e0b" stroke-width="1.8" stroke-dasharray="3,3" />`;
+                    const badge = `<text x="${o.cx}" y="${o.cy}" font-size="14" text-anchor="middle" dominant-baseline="central">🚪</text><title>${o.name} (${o.width} cm)</title>`;
+                    return `<g class="door-elem">${swingArc}${jamb}${leaf}${badge}</g>`;
+                } else if (o.type === 'window') {
+                    const frame = `<line x1="${o.p0.x}" y1="${o.p0.y}" x2="${o.p1.x}" y2="${o.p1.y}" stroke="#06b6d4" stroke-width="7" stroke-linecap="square" />`;
+                    const glass = `<line x1="${o.p0.x}" y1="${o.p0.y}" x2="${o.p1.x}" y2="${o.p1.y}" stroke="#e0f2fe" stroke-width="2" stroke-linecap="square" />`;
+                    const badge = `<text x="${o.cx}" y="${o.cy}" font-size="13" text-anchor="middle" dominant-baseline="central">🪟</text><title>${o.name} (${o.width} cm)</title>`;
+                    return `<g class="window-elem">${frame}${glass}${badge}</g>`;
+                }
+                return '';
+            }).join('');
+
+            // Render Dimensions (Wall Lengths)
+            const dimsGroup = document.getElementById('dimsGroup');
+            dimsGroup.innerHTML = walls.map(w => {
+                const mx = (w.x1 + w.x2) / 2;
+                const my = (w.y1 + w.y2) / 2;
+                return `
+                    <g>
+                        <rect x="${mx - 22}" y="${my - 9}" width="44" height="18" fill="rgba(15, 23, 42, 0.85)" rx="4" />
+                        <text x="${mx}" y="${my + 4}" fill="#cbd5e1" font-size="10" font-weight="600" text-anchor="middle">${w.length_m}m</text>
+                    </g>
+                `;
+            }).join('');
+
+            // Auto-fit to viewport
+            fitToBox(minX, minY, bboxWidth, bboxHeight);
+        }
+
+        function fitToBox(minX, minY, w, h) {
+            const svg = document.getElementById('svgViewport');
+            const svgWidth = svg.clientWidth || 800;
+            const svgHeight = svg.clientHeight || 600;
+
+            const pad = 60;
+            const scaleX = svgWidth / (w + pad * 2);
+            const scaleY = svgHeight / (h + pad * 2);
+            scale = Math.min(scaleX, scaleY, 1.8);
+
+            const centerX = minX + w / 2;
+            const centerY = minY + h / 2;
+
+            panX = (svgWidth / 2) - (centerX * scale);
+            panY = (svgHeight / 2) - (centerY * scale);
+
+            updateTransform();
+        }
+
+        function updateTransform() {
+            const g = document.getElementById('transformGroup');
+            g.setAttribute('transform', `translate(${panX}, ${panY}) scale(${scale})`);
+        }
+
+        // Pan & Zoom Events
+        function setupPanZoomEvents() {
+            const svg = document.getElementById('svgViewport');
+
+            svg.addEventListener('mousedown', (e) => {
+                isPanning = true;
+                startX = e.clientX - panX;
+                startY = e.clientY - panY;
+            });
+
+            window.addEventListener('mousemove', (e) => {
+                if (!isPanning) return;
+                panX = e.clientX - startX;
+                panY = e.clientY - startY;
+                updateTransform();
+            });
+
+            window.addEventListener('mouseup', () => {
+                isPanning = false;
+            });
+
+            svg.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                const zoomFactor = 1.15;
+                const mouseX = e.clientX;
+                const mouseY = e.clientY;
+
+                const prevScale = scale;
+                if (e.deltaY < 0) {
+                    scale = Math.min(scale * zoomFactor, 8.0);
+                } else {
+                    scale = Math.max(scale / zoomFactor, 0.15);
+                }
+
+                panX = mouseX - (mouseX - panX) * (scale / prevScale);
+                panY = mouseY - (mouseY - panY) * (scale / prevScale);
+
+                updateTransform();
+            });
+        }
+
+        function zoomIn() {
+            scale = Math.min(scale * 1.25, 8.0);
+            updateTransform();
+        }
+        function zoomOut() {
+            scale = Math.max(scale / 1.25, 0.15);
+            updateTransform();
+        }
+        function resetView() {
+            renderFloorplan(floorplanData);
+        }
+
+        // Visibility Toggles
+        function toggleVisibility(type) {
+            visibility[type] = !visibility[type];
+            const btn = document.getElementById('btnTog' + type.charAt(0).toUpperCase() + type.slice(1));
+            if (btn) btn.classList.toggle('active', visibility[type]);
+
+            if (type === 'rooms') document.getElementById('roomsGroup').style.display = visibility.rooms ? 'inline' : 'none';
+            if (type === 'walls') document.getElementById('wallsGroup').style.display = visibility.walls ? 'inline' : 'none';
+            if (type === 'doors') {
+                document.querySelectorAll('.door-elem').forEach(el => el.style.display = visibility.doors ? 'inline' : 'none');
+            }
+            if (type === 'windows') {
+                document.querySelectorAll('.window-elem').forEach(el => el.style.display = visibility.windows ? 'inline' : 'none');
+            }
+            if (type === 'dims') document.getElementById('dimsGroup').style.display = visibility.dims ? 'inline' : 'none';
+        }
+
+        // Right Inspector Rooms List
+        function renderRoomCards(rooms) {
+            const container = document.getElementById('roomsListContainer');
+            container.innerHTML = rooms.map(r => `
+                <div class="room-item-card" id="card_room_${r.id}" onclick="selectRoomCard('${r.id}')">
+                    <div class="room-header-row">
+                        <span>${r.name}</span>
+                        <span class="room-area-tag">${r.area_m2} m²</span>
+                    </div>
+                    <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.25rem;">
+                        ${r.area_sqft} sqft • ${r.vertices_count} vertices
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function selectRoomCard(roomId) {
+            document.querySelectorAll('.room-item-card').forEach(c => c.classList.remove('selected'));
+            const card = document.getElementById('card_room_' + roomId);
+            if (card) {
+                card.classList.add('selected');
+                card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+
+            document.querySelectorAll('.room-polygon-g polygon').forEach(p => p.setAttribute('fill-opacity', '0.25'));
+            const poly = document.querySelector('#poly_room_' + roomId + ' polygon');
+            if (poly) {
+                poly.setAttribute('fill-opacity', '0.65');
+            }
+        }
+
+        function switchInspectorTab(tabId, el) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            el.classList.add('active');
+            document.getElementById('roomsTab').style.display = tabId === 'roomsTab' ? 'block' : 'none';
+            document.getElementById('jsonTab').style.display = tabId === 'jsonTab' ? 'block' : 'none';
+        }
+
+        // Drag and drop handler
+        function setupDragAndDrop() {
+            const box = document.getElementById('canvasBox');
+            const overlay = document.getElementById('dropOverlay');
+
+            box.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                overlay.classList.add('active');
+            });
+
+            overlay.addEventListener('dragleave', () => {
+                overlay.classList.remove('active');
+            });
+
+            overlay.addEventListener('drop', (e) => {
+                e.preventDefault();
+                overlay.classList.remove('active');
+                if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+                    loadLocalFile(e.dataTransfer.files[0]);
+                }
+            });
+        }
+
+        function handleFileSelect(e) {
+            if (e.target.files && e.target.files[0]) {
+                loadLocalFile(e.target.files[0]);
+            }
+        }
+
+        function loadLocalFile(file) {
+            const reader = new FileReader();
+            reader.onload = (evt) => {
+                try {
+                    const rawJson = JSON.parse(evt.target.result);
+                    // Dynamically parse in browser JS
+                    const parsed = parseClientFloorplan(rawJson, file.name);
+                    renderFloorplan(parsed);
+                } catch (err) {
+                    alert('Error parsing JSON file: ' + err.message);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        // Client-side fallback parser for client-uploaded files
+        function parseClientFloorplan(data, filename) {
+            let unit = (data.unit || '').toLowerCase();
+            const layers = data.layers || {};
+            const selId = data.selectedLayer || Object.keys(layers)[0] || 'layer-1';
+            const layer = layers[selId] || {};
+            const vertices = layer.vertices || {};
+            const lines = layer.lines || {};
+            const holes = layer.holes || {};
+            const areas = layer.areas || {};
+
+            // Auto-detect millimeters vs centimeters
+            let isMm = unit === 'mm';
+            if (!isMm && unit !== 'cm') {
+                for (let lid in lines) {
+                    let props = lines[lid].properties || {};
+                    let thick = (props.thickness && props.thickness.length) || 0;
+                    let height = (props.height && props.height.length) || 0;
+                    if (thick > 50 || height > 1000) {
+                        isMm = true;
+                        break;
+                    }
+                }
+            }
+
+            const scaleCm = isMm ? 0.1 : 1.0;
+            const scaleM = isMm ? 0.001 : 0.01;
+            unit = isMm ? 'mm' : 'cm';
+
+            let walls = [];
+            for (let lid in lines) {
+                let l = lines[lid];
+                let vids = l.vertices || [];
+                if (vids.length === 2 && vertices[vids[0]] && vertices[vids[1]]) {
+                    let v0 = vertices[vids[0]];
+                    let v1 = vertices[vids[1]];
+                    let length_cm = Math.hypot(v1.x - v0.x, v1.y - v0.y) * scaleCm;
+                    walls.push({
+                        id: lid,
+                        x1: v0.x,
+                        y1: v0.y,
+                        x2: v1.x,
+                        y2: v1.y,
+                        length_m: +(length_cm / 100).toFixed(2)
+                    });
+                }
+            }
+
+            let openings = [];
+            let doorsCnt = 0;
+            let windowsCnt = 0;
+            for (let hid in holes) {
+                let h = holes[hid];
+                let l = lines[h.line];
+                if (!l) continue;
+                let vids = l.vertices || [];
+                if (vids.length === 2 && vertices[vids[0]] && vertices[vids[1]]) {
+                    let v0 = vertices[vids[0]];
+                    let v1 = vertices[vids[1]];
+                    let dx = v1.x - v0.x;
+                    let dy = v1.y - v0.y;
+                    let L = Math.hypot(dx, dy);
+                    if (L > 0) {
+                        let off = h.offset || 0.5;
+                        let cx = v0.x + off * dx;
+                        let cy = v0.y + off * dy;
+                        let w = (h.properties && h.properties.width && h.properties.width.length) || 80;
+                        let halfW = w / 2;
+                        let ux = dx / L;
+                        let uy = dy / L;
+                        let nx = -uy;
+                        let ny = ux;
+                        let hname = h.name || '';
+                        let isDoor = hname.toLowerCase().includes('door');
+                        let isWin = hname.toLowerCase().includes('window');
+                        let opType = isDoor ? 'door' : (isWin ? 'window' : 'opening');
+                        if (opType === 'door') doorsCnt++;
+                        if (opType === 'window') windowsCnt++;
+
+                        openings.push({
+                            id: hid,
+                            name: hname,
+                            type: opType,
+                            width: w,
+                            cx: +cx.toFixed(1),
+                            cy: +cy.toFixed(1),
+                            p0: { x: +(cx - halfW * ux).toFixed(1), y: +(cy - halfW * uy).toFixed(1) },
+                            p1: { x: +(cx + halfW * ux).toFixed(1), y: +(cy + halfW * uy).toFixed(1) },
+                            leaf: { x: +(cx - halfW * ux + w * nx).toFixed(1), y: +(cy - halfW * uy + w * ny).toFixed(1) }
+                        });
+                    }
+                }
+            }
+
+            let rooms = [];
+            let totalM2 = 0;
+            for (let aid in areas) {
+                let a = areas[aid];
+                let vids = a.vertices || [];
+                let poly = [];
+                let polyM = [];
+                vids.forEach(vid => {
+                    if (vertices[vid]) {
+                        poly.push({ id: vid, x: vertices[vid].x, y: vertices[vid].y });
+                        polyM.push([vertices[vid].x * scaleM, vertices[vid].y * scaleM]);
+                    }
+                });
+
+                let areaM2 = 0;
+                for (let i = 0; i < polyM.length; i++) {
+                    let j = (i + 1) % polyM.length;
+                    areaM2 += polyM[i][0] * polyM[j][1];
+                    areaM2 -= polyM[j][0] * polyM[i][1];
+                }
+                areaM2 = Math.abs(areaM2) / 2;
+                totalM2 += areaM2;
+
+                let cx = poly.length ? poly.reduce((acc, p) => acc + p.x, 0) / poly.length : 0;
+                let cy = poly.length ? poly.reduce((acc, p) => acc + p.y, 0) / poly.length : 0;
+
+                rooms.push({
+                    id: aid,
+                    name: a.name || `Area_${aid}`,
+                    area_m2: +areaM2.toFixed(2),
+                    area_sqft: +(areaM2 * 10.7639).toFixed(1),
+                    vertices_count: vids.length,
+                    polygon: poly,
+                    center: { x: +cx.toFixed(1), y: +cy.toFixed(1) }
+                });
+            }
+
+            return {
+                unit: unit,
+                direction: data.direction || 'N',
+                direction_angle: data.directionangle || 0,
+                total_area_m2: +totalM2.toFixed(2),
+                total_area_sqft: +(totalM2 * 10.7639).toFixed(1),
+                rooms_count: rooms.length,
+                walls_count: walls.length,
+                doors_count: doorsCnt,
+                windows_count: windowsCnt,
+                rooms: rooms,
+                walls: walls,
+                openings: openings,
+                raw_json: data
+            };
+        }
+    </script>
+</body>
+</html>
